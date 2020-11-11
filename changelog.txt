@@ -1,0 +1,117 @@
+2020-24-10 - Version 1.0.3
+- USB serial support for sending M8 display data to computer. See https://github.com/DirtyWave/M8DisplayTouchdesigner 
+- RET (Retrig command) now works in table
+- STA (Sample Start offset command) now retriggers sample at the given position if it is currently playing
+- RAN (Random command) fixes for inconsistent ranges in both phrase and table
+- Instrument paste (Select+Opt to copy, Select+Edit to paste) on sample instrument did not set sample correctly
+- Entering notes in phrase would insert a C-0 in certain conditions
+- Command column would reset to "---" when navigating to / from instrument screen
+- Fixed phrase edit behavior when clearing inserted values
+- Instrument reset confirmation dialog was not displaying when only changing samples
+- MIDI Notes & pitchbend wheel issues when sync receive mode without sync
+- MIDI input tracks on the same channel PB Wheel support
+- MIDI Instrument Program Change command was not triggering properly on repeated values
+- MIDI out start sync command should not trigger from note preview
+- USB MIDI sync did not send start / stop messages
+- USB Audio dropouts/clicks fixes for Windows
+- Rewrote Sample data streaming for better performance
+- Display drawing optimizations
+- Increased sample pitch limits if sample is less than 44.1khz or 16 bit
+
+2020-24-09 - Version 1.0.2
+- File Browser fixed noise playback on holding [START] (preview sample) while navigating to "/.."
+- Button input fine tuning for fast fingers or fat thumbs.
+- New chain/phrase/table/instrument [EDIT+EDIT] double tap stability
+- [OPT+UP/DOWN] on phrase in phrase playback mode was not working correctly.  
+- Phrase and Table reset command values to 00 when editing from default 00
+- CHA command (Chance) in table ignored entire table if tick was set to FF
+- CHA command (Chance) in table had old inversed chance percentage value
+
+2020-23-09 - Version 1.0.1
+- LFO assigned to Volume had wrong shape direction
+- Chain to phrase navigation was lost when navigating on an empty row '--'
+
+2020-23-09 - Version 1.0.0
+MIDI & Touchscreen
+- Allow [TOUCH] to work while [OPTION] is pressed on non-assignable screens.
+- MIDI CC and touch control added to Mixer Screen.
+- Note/Sound playback while recording via MIDI.
+- MIDI SETTINGS screen option to disable recording KILL commands.
+- Allow multiple tracks to respond to the same MIDI channel.
+- Do not stop sequencer on All-Notes-Off messages (MIDI CC#123)
+- Better BPM display accuracy on MIDI sync.
+
+User Interface / Interaction
+- Various accidental inserts / edits fixed with button input. EG: Pasting then releasing [SELECT] before [EDIT]
+- Cloning now looks for next available slot from current index instead of starting from zero.
+- Selection mode now supports creating phrases and chains in empty columns.
+- Selection mode in Chain screen supports cloning selection using [SELECT+EDIT]
+- Selection mode Select-All & Copy Selection now moves cursor to the top left of selection on exit.
+- Quick cut [OPTION+EDIT] now uses the copy buffer. [SELECT+EDIT] to paste.
+- QWERTY Keyboard removed invalid file-system characters. (Resulted in unsavable songs and instruments)
+- QWERTY Keyboard cursor now allows horizontal and vertical wrap.
+- Command Help screen cursor now allows horizontal and vertical wrap.
+- Command help screen text now easier to read. (It was too dark)
+- File Browser now highlights previous directory when exiting a sub-folder.
+- File Browser now recovers to default directory if previous directory is no longer available.
+- File Browser [LEFT] to jump to top of directory list, [RIGHT] to jump to bottom of directory list.
+- File Browser Save directory selection UI tweak for clarity.
+- File Browser now selects the current sample by default.
+- File Browser 31 character file name limit removed. (But highly suggest using short names) 
+- Chain transpose column now inserts previously edited transpose values.
+- Battery indicator no longer visually "jitters" between values.
+- "Are you sure" dialog added to changing instrument type to prevent lost changes.
+- Added Note-Preview option to Project screen for disabling note preview on inserting/editing notes.
+- Output Volume on Project screen - [UP+EDIT] no longer makes large steps when volume is above E0. (Ear protection measure)
+- Output Volume on Project screen - Key repeat on [RIGHT+EDIT] or [UP+EDIT] to increase volume slowed. (Ear protection measure)
+
+MIDIOUT Synth
+- CC value now defaults to "--" to not send CC value on instrument trigger.
+- MPG command (MIDI Program Change) is now a absolute value.
+
+Macrosynth
+- KIL command (Kill note) now stops plucked model polyphony
+- Oscillator state note retriggered on new notes for specific models
+
+Global Synth changes
+- VOL command (Volume) can now be assigned to both LFO and ENV simultaneously
+- LFT command (LFO Retrigger) value now specifies the LFO position
+
+Player 
+- Chance command (CHA) changed. First digit: Chance all commands / notes to the left side, second digit: everything to the right.
+- HOP command in table now resets all previous HOP counters in table.
+- ARP command (Arpeggio) can now be set in table.
+- RAN command (Random) Continuous RAN use on relative commands now uses base relative value.
+- CHA command (Chance) Inverted the range for usability. 0->Zero probability, F->100% probability.
+- Live mode - Individual chain lengths now respected before proceeding to the queued chain.
+- Phrase playback now uses current chain's transpose column value.
+
+Bug Fixes
+- Selection value interpolation [SELECT+EDIT] now disabled if more than one column is highlighted.
+- Selection value interpolation using [SELECT+OPT+OPT] to create selection did not work.
+- Instrument paste [SELECT+EDIT] would reset instrument settings when nothing was copied.
+- File Browser failed to reset scroll offset when opening browser screen resulting in a empty list.
+- HOP command occasionally skipped on table when TIC rate was FF. 
+- RET command (Retrig) help text for volume was backwards.
+- RET command (Retrig) Volume scaling was offset incorrectly.
+- VOL command (Volume) was wrapping back to zero or to max volume when automating.
+- PSL command (Pitch Slide) on first step in phrase resulted in unexpected behavior.
+- RAN command (Random) did nothing when table tick rate was set to 00. 
+- RAN command (Random) value was off by 1 on both digits.
+- ARP command (Arpeggio) would hold last note by one extra tick.
+- TBL command (Table select) with a value of 80+ would start with the wrong tick rate (00 instead of 01)
+- KIL command (Kill note) would restart table from beginning in table "automation" mode- (Tick 00)
+- XDT command (Delay effect time) Delay time for right side was not being respected.
+- USB Audio issues with playing back samples for the first time.
+- Sample SLICE could cause crash when note number was greater than the number of slices.
+- Synth LFO set to ONCE mode would not reset to 0 correctly.
+- Instrument number in phrase without a note would trigger note C-0 instead of the last played note.
+- Wrong tempo was displayed on power-on.
+- Song playback would stop on an empty chain. It is now treated the same as no chain number: "--"
+- Live playback would loop first phrase indefinitely if player started with selection mode activated.
+
+2020-09-09 - Version 0.9.9
+- Changed output volume mixing to use DAC
+- Fixed visual artifacts "green squares" bug with instrument type change
+
+

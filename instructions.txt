@@ -1,0 +1,18 @@
+--== Windows (7/8/10) and OSX ==--
+Download & Install TyTools:
+https://github.com/Koromix/tytools/releases
+
+Download & Install the M8 desktop Touchdesigner application:
+https://github.com/DirtyWave/M8DisplayTouchdesigner
+
+--== For Windows 7 Only ==--
+Download and install Teensyduino to install the USB driver needed for communicating with the M8: https://www.pjrc.com/teensy/td_download.html
+
+--== Instructions ==--
+1. If you own a M8 or other Teensy devices, unplug them from your host computer.
+2. Plug in Teensy 4.1 via USB.
+3. Open "TyUpdater" which you should have installed above.
+4. Click "Upload" select the .hex file from this zip file.
+5. Open the Touchdesigner program "M8DisplayTouchdesigner.toe"
+6. Click "Connection & Settings" at the bottom and select the correct Serial port from the dropdown list.
+7. Use any DAW or windows / mac program that enables monitoring a USB audio input and select "M8" to listen to M8's audio.
