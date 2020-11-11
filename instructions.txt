@@ -1,12 +1,9 @@
---== Windows (7/8/10) and OSX ==--
+--== Windows 10 and OSX ==--
 Download & Install TyTools:
 https://github.com/Koromix/tytools/releases
 
 Download & Install the M8 desktop Touchdesigner application:
 https://github.com/DirtyWave/M8DisplayTouchdesigner
-
---== For Windows 7 Only ==--
-Download and install Teensyduino to install the USB driver needed for communicating with the M8: https://www.pjrc.com/teensy/td_download.html
 
 --== Instructions ==--
 1. If you own a M8 or other Teensy devices, unplug them from your host computer.
