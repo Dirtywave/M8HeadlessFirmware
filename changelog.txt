@@ -1,3 +1,36 @@
+
+2020-11-22 - Version 1.1.0
+- Stereo sample support (full-stereo signal, not converted to mono)
+- Pan as destination to synth envelopes and LFO 
+- Theme/Custom colors added- Accessible in Project screen
+- File Browsing - Faster & betterer
+- Song Screen Mute/Solo Selection added- Perform Mute/Solo to all selected tracks when selection mode is activated
+- Song Screen & Mixer screen B+LEFT or B+RIGHT to solo all tracks left or right from cursor
+- Song Screen "Deep clone" - SELECT+OPT to start a section, SELECT+EDIT to clone selection or SELECT+EDIT+EDIT to deep clone (clones all phrases inside of selected chains)
+- Project Screen "CLEAR UNUSED" Phrases & Chains now removes duplicate
+- Saving a song named "TEMPLATE" in the /System directory will be used when creating a new song
+- Better save song error handling
+- Dynamic CPU speed to for longer battery life
+- Desktop USB display: Improved reliability
+- HOP command in phrase now resets all previous HOP counters in phrase
+- MIDI Note input: Improved legato handling
+- MIDI Note input: Improved velocity curve
+- MIDI Note input: Wakes screen on new notes
+- MIDI Note input: Bug fix for hanging notes when using global project transpose
+- MIDI Note input: Disable legato mode option in MIDI settings
+
+2020-11-10 - Version 1.0.4
+- New "Headless" M8 for using with a stock Teensy 4.1 See https://github.com/DirtyWave/M8HeadlessFirmware
+- Improved sample stream handling (more stable)
+- Faster display handling
+- Remote display improvements - Added remote keyboard control and note keyboard mode. See https://github.com/DirtyWave/M8DisplayTouchdesigner 
+- Improved song loading / queue during playback through USB
+- LFT (LFO trigger command) while mapped to sample offset has better handling to skip to a position in the sample
+- M8 could crash when SD card was ejected during playback
+- Increased inactivity timeout to 15 mins (was 5)
+- Inactivity was not trigger for some MIDI events
+- RET (Retrig command) did not retrigger other commands when on phrase command column 3.
+
 2020-24-10 - Version 1.0.3
 - USB serial support for sending M8 display data to computer. See https://github.com/DirtyWave/M8DisplayTouchdesigner 
 - RET (Retrig command) now works in table
