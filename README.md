@@ -13,5 +13,5 @@ Samples should be located in /Samples on the card in mono or stereo wav format. 
 ## Preliminary user-contributed manual ##
 A user contribted manual is available here: https://www.notion.so/M8-manual-ae3cb262908840b4b834c7485d3d4fb6
 
-## More help is availble out our discord server ##
+## More help is availble on our discord server ##
 Join us on Discord! https://discord.gg/7SVuZe9
