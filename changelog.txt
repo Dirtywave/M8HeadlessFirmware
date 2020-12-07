@@ -1,4 +1,23 @@
 
+2020-12-06 - Version 1.1.1
+- Many audio and code optimizations to decrease latency to 1/4th from the previous versions. Much improved MIDI sync & MIDI Out to Audio input round trip timing
+- USB Audio stability fixes
+- File Browser: Audio clicks/dropouts removed while browsing files
+- File Browser: Alphabetical sorting added. Sort the current directory by pressing SELECT+OPTION - Does not sort by default due to speed concerns
+- Song queued load (loading a song while playing current song) switching transition is improved
+- Sample synth - OSC play mode with slices implemented. New slices start at relative offset from where sample is currently playing
+- Note Octave renumbered one octave up. Range from C-1 to G-B (was C-0 to G-A) A-4 is now A440
+- Chain Screen TSP column default value will always be 00 
+- MIDI Note Offs on SONG ROW CUE were not checking for last held note, any note off would stop the sequencer
+- MIDI Instrument Legato behavior when Instrument column is empty on phrase (Sends note-off after new note on)
+- Degrade code for Macrosynth and Sample had to change as it was incompatible with the lower latency. (Bad code, sorry)
+- Fix: Fast Instrument naming could insert invalid characters
+- Fix: Playhead ">" occasionally being displayed on Mixer screen
+- Fix: VU Meters were not accounting for negative bias.
+- Fix: MIDI Out Transport send was not working when MIDI out sync was disabed
+- Fix: While Mute/Solo was activated, INPUT mixing changes were ignored 
+- Fix: MIDI Input sync was offset depending on source's tempo
+
 2020-11-22 - Version 1.1.0
 - Stereo sample support (full-stereo signal, not converted to mono)
 - Pan as destination to synth envelopes and LFO 
