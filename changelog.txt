@@ -1,3 +1,13 @@
+2020-12-20 - Version 1.2.0
+- New: Song Screen bookmarks added (change the color of a chain in song screen for visual aid). TAP OPT 3 times to add or remove a bookmark on the current cursor position.
+- New: Render audio implemented (via project screen) Notes: Renders are located in "/Renders" and files are never overwritten- new renders with same name are incremented "test_2.wav", "test_3.wav"
+- New: Sample editing and recording, accessible via Instrument screen to the right of the sample name on SAMPLE engine.
+- Fixed: Addressed USB Audio input dropouts/clicks
+- Fixed: Navigating to Instrument screen could jump to Instrument 7F
+- Fixed: Issues with Sample while using LFO assigned to LOOP ST sample stops unexpectedly
+- Fixed: Switching PLAY to reverse via effect commands sample stops unexpectedly
+- Fixed: Stop playback when all tracks have hit HOPFF for queue loading & sample recording song mode
+- Fixed: Better sample handling (anti-dropouts/clicks)
 
 2020-12-06 - Version 1.1.1
 - Many audio and code optimizations to decrease latency to 1/4th from the previous versions. Much improved MIDI sync & MIDI Out to Audio input round trip timing
