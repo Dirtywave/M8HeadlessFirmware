@@ -1,9 +1,31 @@
+2020-12-29 - Version 1.2.2
+- New: Groove screen allows 0 as a tick entry. 0 = skips the current phrase row. Allows easy triplets and 3/4 time sig without hops or delay commands.
+- Improved: Groove screen - Added play position indication ">"
+- Improved: MIDI Control channel can now respond to all MIDI channels, scroll past 16 to "ALL" in MIDI settings
+- Improved: Song load time faster for queued song loading (loading song while another song is playing)
+- Improved: Recording/Sampling is disabled if battery is too low and not charging
+- Improved: Wavsynth had clicks when retriggering instrument 
+- Improved: Sample start position command effect smoothing (clickless start position sequencing)
+- Improved: Reset all effects on boot-up
+- Fix: Possible hard crash while previewing samples 
+- Fix: Phrase note insert value was set to "---" when selection was active while editing notes
+- Fix: Selection mask (SELECT+OPT) display redrawing clean up (screen flickering)
+- Fix: Clear all copy buffers on loading/creating songs
+- Fix: Render Screen file name validation / UI improvements
+- Fix: Sample Editor Screen spelling error on CROP processing message
+- Fix: MIDIOUT Instrument CC value command effects to work even if instrument's value is set to "--" 
+- Fix: Velocity column was not skipped when using Chance 
+- Fix: Song screen Bookmarks could be created on mute/solo key actions
+- Fix: Song screen Bookmarks worked in mixer screen
+- Fix: Song screen Bookmarks are now cleared / moved when song rows are cleared / moved
+- Fix: Instruments - Mixing of table tic FF with other speeds on the same table could cause audio artifacts
+
 2020-12-23 - Version 1.2.1
-- Fixed: Song Screen - Song row selection (SELECT+OPT+OPT) moving to incorrect row on copying selection.
-- Fixed: Sample Playback - Reverse modes (rev, rev-pp, ...) would stop playback when samplerate was exceedingly low
-- Fixed: Rendering - Deselecting tracks also disabled non-instrument commands (Tempo / effects etc) from those disabled tracks  
-- Fixed: MIDI Sync receive mode still responded in Sample recording and rendering modes
-- Fixed: Tempo would slowly drift out of time while samples were playing
+- Fix: Song Screen - Song row selection (SELECT+OPT+OPT) moving to incorrect row on copying selection.
+- Fix: Sample Playback - Reverse modes (rev, rev-pp, ...) would stop playback when samplerate was exceedingly low
+- Fix: Rendering - Deselecting tracks also disabled non-instrument commands (Tempo / effects etc) from those disabled tracks  
+- Fix: MIDI Sync receive mode still responded in Sample recording and rendering modes
+- Fix: Tempo would slowly drift out of time while samples were playing
 - Improved: Sample playing/streaming from SD
 - Improved: USB output dropouts while playing samples
 - Improved: Low Power mode only triggered when volume is below -50db and playback is stopped to avoid dropouts while listening to audio input
@@ -12,12 +34,12 @@
 - New: Song Screen bookmarks added (change the color of a chain in song screen for visual aid). TAP OPT 3 times to add or remove a bookmark on the current cursor position.
 - New: Render audio implemented (via project screen) Notes: Renders are located in "/Renders" and files are never overwritten- new renders with same name are incremented "test_2.wav", "test_3.wav"
 - New: Sample editing and recording, accessible via Instrument screen to the right of the sample name on SAMPLE engine.
-- Fixed: Addressed USB Audio input dropouts/clicks
-- Fixed: Navigating to Instrument screen could jump to Instrument 7F
-- Fixed: Issues with Sample while using LFO assigned to LOOP ST sample stops unexpectedly
-- Fixed: Switching PLAY to reverse via effect commands sample stops unexpectedly
-- Fixed: Stop playback when all tracks have hit HOPFF for queue loading & sample recording song mode
-- Fixed: Better sample handling (anti-dropouts/clicks)
+- Fix: Addressed USB Audio input dropouts/clicks
+- Fix: Navigating to Instrument screen could jump to Instrument 7F
+- Fix: Issues with Sample while using LFO assigned to LOOP ST sample stops unexpectedly
+- Fix: Switching PLAY to reverse via effect commands sample stops unexpectedly
+- Fix: Stop playback when all tracks have hit HOPFF for queue loading & sample recording song mode
+- Fix: Better sample handling (anti-dropouts/clicks)
 
 2020-12-06 - Version 1.1.1
 - Many audio and code optimizations to decrease latency to 1/4th from the previous versions. Much improved MIDI sync & MIDI Out to Audio input round trip timing
