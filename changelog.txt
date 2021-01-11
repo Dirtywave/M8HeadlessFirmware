@@ -1,3 +1,23 @@
+2021-01-11 - Version 1.3.0
+- New: 4op 12 algorythm FM Synth 
+- New: Mixer screen - Display peak DB as message while editing volumes
+- Improved: Instrument name or sample is displayed in message area when editing Instrument number in Phrase  
+- Improved: Browsing Instruments in Instrument screen set the default instrument number to insert in Phrase
+- Improved: Instrument save and load protection / checking
+- Fix: Sample slice mode could result in left and right channels being flipped on certain slices
+- Fix: Song Rendering - Disabled tracks still rendered the first note on the first row if it was present
+- Fix: MIDI in Record channel could insert / preview the wrong instrument
+- Fix: Synth amp LIM "SIN" mode could result in audible clicks/artifacts
+- Fix: Phrase screen disabled selection interpolation on instrument and command columns
+- Fix: Phrase screen cloning error when attempting to clone columns that cannot be cloned
+- Fix: Minor sample playback fixes
+- Fix: Sample editor: Auto-power off while in in editor messed up instrument's sample
+- Fix: Sample editor overwrite on bundle samples did not overwrite original sample
+- Fix: Sample editor had some extra meta data in the display for wave files that contained meta data
+- Fix: Sample editor processes (normalize, 8bit, mono, downsample) did not work properly with samples that contained meta data
+- Fix: Sample editor normalize selection normalized the wrong selection area on small samples 
+
+
 2020-12-29 - Version 1.2.2
 - New: Groove screen allows 0 as a tick entry. 0 = skips the current phrase row. Allows easy triplets and 3/4 time sig without hops or delay commands.
 - Improved: Groove screen - Added play position indication ">"
