@@ -6,7 +6,6 @@ For optimal performance of the SD card should be formatted FAT32 using the SD fo
 As well the random read speed of the card must be very good. Testing has shown two cards that are currently suggested: 
 - Lexar Professional 1800x (Expensive but nice)
 - Sandisk 32gb ultra microsdhc (Cheaper but reliable)
-- Transcend 300s 32GB Micro SD (Cheaper but reliable)
 
 ## About samples on the SD card ##
 Samples should be located in /Samples on the card in mono or stereo wav format. Try to use mono where you can to reduce load on the SD card if you're playing back multiple channels of samples. Subdirectories are supported but the maximum file path length (including the name and extension) is 127 characters.
