@@ -1,5 +1,9 @@
+2021-01-21 - Version 1.3.2
+- Fix: Potential hard-crash while in instrument screen while instrument is playing
+- Fix: Sample browser note preview (START) might apply global song transpose multiple times
+
 2021-01-17 - Version 1.3.1
-- Fix: Sample synth - When battery is below 50%, minor sample playback issues could occure
+- Fix: Sample synth - When battery is below 50%, minor sample playback issues could occur
 - Fix: Sample synth - Sequencer was ignoring or improperly triggering sample when using the STA (Sample start) command after sample was already playing
 - Fix: Instrument screen - FM synth Mini-map graphics highlighted "E" (white in default theme)
 - Fix: Phrase view - Navigating shortcut OPT+LEFT or OPT+RIGHT to navigate between tracks resulted in Mini-map display error 
