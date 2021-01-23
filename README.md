@@ -1,7 +1,7 @@
 # M8 Headless Firmware for Teensy 4.1
 M8 Headless Precompiled Firmware. Used for Teensy 4.1 connected to a host computer via USB.
 
-Read the user-contributed setup guide here: https://www.notion.so/M8-Headless-Setup-773eea2da2f042f7aecb2657adc853ca
+Read the setup guide here: https://github.com/DirtyWave/M8Docs/blob/main/docs/M8HeadlessSetup.md
 
 See also: https://github.com/DirtyWave/M8DisplayTouchdesigner
 
