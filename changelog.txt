@@ -1,3 +1,11 @@
+2021-01-21 - Version 1.3.3
+- Improved: Screen navigation and sample editing redrawing/flicker prevention
+- Fix: Phrase REP (Repeat) Command - Retrigging instruments resulted in wrong command value if initial command value was not zero
+- Fix: Phrase - Note preview for instruments with global transpose disabled were still transposed
+- Fix: Sample Browser - Sample preview was not respecting instruments with global transpose disabled 
+- Fix: Synth Envelops - If all envelope settings were 0, command effects for the envelope were ignored
+- Fix: Potential hard-crash while using MIDI SONGMAP mode 
+
 2021-01-21 - Version 1.3.2
 - Fix: Potential hard-crash while in instrument screen while instrument is playing
 - Fix: Sample browser note preview (START) might apply global song transpose multiple times
