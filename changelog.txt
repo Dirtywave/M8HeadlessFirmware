@@ -1,3 +1,33 @@
+2021-04-21 - Version 1.3.5
+- New: 32bit DAC output support
+- New: 24 Bit Wave file support added for playback and editing (limited 1 octave up for stereo, 2 octaves up for mono)
+- New: MIDI - Song position offset support for MIDI transport send and receive mode
+- New: File Browser - Instrument Presets File Browser - Preview instrument files in browser by pressing START
+- New: Song Screen - Shaded chains as darker color when no notes are present in chain
+- New: Phrase and Table - Command effects help messages in bottom of screen
+- New: Inst. Screen - Help messages for instrument time related parameters
+- New: All screens - Help messages for copying, pasting, and cloning
+- Improved: Samples - Better error message when sample fails to load 
+- Improved: Samples - Better meta data handling for less "FAILED TO LOAD" errors
+- Improved: Instrument Envelopes and LFO interpolating improvements
+- Improved: Instrument - Better / sharper transients when switching instruments in the same track
+- Improved: Phrase - Cloning tables and grooves now possible from FX command value column
+- Improved: Sample OSC mode looping short samples improved interpolation and oversampling
+- Improved: Phase - "*" next to phrase number when the phrase is used in other chains of song
+- Improved: Groove commands in table now implemented. (Changes groove in the currently playing track)
+- Improved: FMsynth scope is better/more accurate
+- Fix: PSL command never reached destination note, slewed non-linearly. Old songs may need to be adjusted due to formula error
+- Fix: Phrase - Command fx names could be displayed as `---` when no instrument is in phrase
+- Fix: Bundle - Creation failed when samples could not be found
+- Fix: Cursor - Selection Mode had a visual bug if you triggered SELECT+OPT after moving selection left or right
+- Fix: Song Screen - Cutting a large scrolled set of rows could result in cursor hopping to song row FF 
+- Fix: Rendering - Stem mode "repeat" was broken
+- Fix: Minor typo in HOP command help text
+- Fix: Chain screen OPT-UP/DOWN and OPT-LEFT/RIGHT navigation fixes
+- Fix: Fast table (FF) did not work while M8 was in receive MIDI sync mode
+- Fix: Rendering stems issue with custom start and length parameters
+- Fix: Rendering song had an extra 64 samples at the end of the rendered waveform
+
 2021-02-22 - Version 1.3.4
 - New: Render Screen - Stem rendering option for rendering selected tracks individually all at once.
 - Improved: fm synth optimizations
