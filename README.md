@@ -14,7 +14,7 @@ The random read speed of the card must also be very good. Testing has shown two 
 Samples should be located in the /Samples directory on the card in mono or stereo wav format. Try to use mono where you can to reduce load on the microSD card if you're playing back multiple channels of samples. Subdirectories are supported but the maximum file path length (including the name and extension) is 127 characters.
 
 ## Preliminary user-contributed manual ##
-A user-contributed M8 manual is available here: https://www.notion.so/M8-manual-ae3cb262908840b4b834c7485d3d4fb6
+A user-contributed M8 manual is available here: https://www.notion.so/dc3fe39bbc464879ac984f0a69cc61bf
 
 ## More help is available on our Discord server ##
 Join us on Discord! https://discord.gg/7SVuZe9
