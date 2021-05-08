@@ -1,3 +1,15 @@
+2021-05-08 - Version 1.3.7
+- Improved: general instrument retrigger clickies mitigation
+- Improved: KILL command audio clicky mitigation
+- Fix: Midiout Bank select did not work
+- Fix: Headless could give battery power error when attempting to sample
+- Fix: Changing main output volume and speaker volume had clickies on hardware
+- Fix: MIDI Instrument: Bank number was not transmitted via USB
+- Fix: Note preview was quickly playing the first row of table
+- Fix: Switching between Macrosynth plucked and a sample in the same track could result in audio artifacts
+- Fix: Table HOPs to reset Table REP counters (REP did not work after hopping back)
+- Fix: RET from 1.3.5 / 1.3.6 caused weird artifacts on synthesis from restarting
+
 2021-04-24 - Version 1.3.6
 - New: Reworked USB Audio - Audio dropouts / clicky audio fixes
 - Improved: Instrument Screen - Triggering accidental copy/paste prevention
