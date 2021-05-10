@@ -1,3 +1,9 @@
+2021-05-10 - Version 1.3.7B
+- Fix: 24bit sample slice mode had wrong sample offsets
+- Fix from 1.3.6 - Potential crash fixes on hardware M8
+- Fix from 1.3.7 - Sample browser preview was broken
+- Fix from 1.3.7 - MIDI input Note offs were ignored while in MIDI sync mode
+
 2021-05-08 - Version 1.3.7
 - Improved: general instrument retrigger clickies mitigation
 - Improved: KILL command audio clicky mitigation
