@@ -1,7 +1,57 @@
+2021-05-29 - Version 2.0.0 - Official Production Unit Version Support
+- New: Second LFO added to all synth engines along with command effects
+- New: Main output "DJ" style filter (lowpass to highpass with center being no filter) in the mixer screen
+- New: Tick based LFO modes (faster than step based) scroll past last shape to select a tick based version
+- New: Mixer volumes are now "pre" values, turning down a track will also turn down sends to reverb, chorus, and delay
+- New: Display backlight control in Theme settings for hardware M8
+- New: REP (repeat command) now works on Sequencer and Mixer commands
+- New: REP (repeat command) now does tick-rate parameter updates (less steppy)
+- New: RET (Retrigger) command has been reworked. Retrig values that were repeats now have new behavior
+- New: RET (Retrigger) When used in a table, table no longer resets to start position 
+- New: DEL (note/row delay command) is now independent from other note events- delayed row will trigger in XX ticks
+- New: CHA (Chance command) No longer work on table HOP. Allows aligned columns to apply those commands without HOP breaking
+- New: NTH Command - Conditional trigger based on phrase repeat intervals
+- New: SED Command - Random seed - Set the seed of the random number generator to lock in random results
+- New: VCH, VDE, VRE Commands - Volume Chorus, Volume Delay, and Volume Reverb commands for setting effect output mixer volumes
+- New: VT1 to VT8 and DJF - Mixer effect commands for Volumes and Main filter
+- New: FM Synth New alternate OP shapes
+- New: FM Synth phase set command to trigger an exact phase offset
+- New: Macrosynth command effect for striking/trigger specific shapes (like plucked and kick- Shapes 1C to 23)
+- New: Midiout instrument now has port selection option
+- New: Groove screen help messages
+- New: Project global transpose now has help message 
+- New: MIDI mapping help message when assigning and clearing MIDI mappings
+- New: Delete/cut [OPT+EDIT] no longer clears midi mapping unless the parameter is set to it's defualt value
+- New: Song screen selection mode edit actions (EDIT+UP/DOWN to push/collapse empty spaces) 
+- Fix: Macrosynth Hard crash fix
+- Fix: Sample playback hard crash fix on hardware 
+- Fix: File Browser could crash M8/Headless if number of files in viewed directory was over 512
+- Fix: Mini-map had graphical glitch when navigating between phrases using OPT+LEFT/RIGHT
+- Fix: Effect help screen did not work properly on the first row of the first phrase in song if there was no instrument
+- Fix: C-1 would not work on "key jazz" in Touchdesigner display application
+- Fix: Preview instruments with ARP had held note
+- Fix: Tempo help message in table was wrong
+- Fix: Reverse mode for 24 bit samples was broken
+- Fix: Instrument file browser preview would break Sample browser previewing
+- Fix: FM, Macro, and Wavsynth had relative FIN command wrap back to -1
+- Fix: Note previewed in phrase when deleting a note
+- Improved: LFO and ENV pan destination is now bipolar- Breaking change but easily adapted
+- Improved: Renamed reverb damping to decay
+- Improved: Selection Interpolation now is invalid if the start or end row is `--`
+- Improved: Wavsynth's Filter types have been flipped around to better match other engines
+- Improved: Wavsynth filter is drawn to oscope when using post filter modes
+- Improved: MIDIMAP mapping range is now 00 to FF instead of 00 to 7F
+- Improved: Cursor can now exit selection mode by cycling selection mode SEL+OPT+OPT+OPT+OPT
+- Improved: Crash/timeout protection when saving data to SD card
+- Improved: More anticlicky improvements when retriggering instruments
+- Improved: Oscope has less artifacts on high pitched notes
+- Improved: Double-tap Edit actions now have a timer window to detect double taps
+- Improved: File Browser - Delete file confirm dialog now has "Cancel" as default selection
+
 2021-05-14 - Version 1.3.8
 - Fix from 1.3.5~1.3.7 - Potential crash fixes on hardware M8
 - Fix: C-1 did not trigger correct pitch (played last note)
-- Fix: Crash on active selection playback while MIDI send trnsport is enabled
+- Fix: Crash on active selection playback while MIDI send transport is enabled
 
 2021-05-10 - Version 1.3.7B
 - Fix: 24bit sample slice mode had wrong sample offsets
