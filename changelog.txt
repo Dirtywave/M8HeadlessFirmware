@@ -1,3 +1,10 @@
+2021-06-01 - Version 2.0.1
+- Fix: File browser default sample/instrument selection was wrong
+- Fix: Help messages on command effects did not work if there was no instrument on current row
+- Fix: FM synth could stop all audio if note previewing track for the first time on power-up
+- Improved: Beta M8 - Faster screen drawing performance when switching screens
+- Improved: Production M8 - Display gamma/color calibration
+
 2021-05-29 - Version 2.0.0 - Official Production Unit Version Support
 - New: Second LFO added to all synth engines along with command effects
 - New: Main output "DJ" style filter (lowpass to highpass with center being no filter) in the mixer screen
