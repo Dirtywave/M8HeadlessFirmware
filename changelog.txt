@@ -1,3 +1,8 @@
+2021-06-04 - Version 2.0.2
+- Fix: MIDI mappings could have erratic behavior if viewing mapped Instrument or Mixer
+- Fix: Changing tempo while playing back could slow down tempo for a brief period
+- Fix: MIDI out instrument - port selection would not take place until after instrument is triggered
+
 2021-06-01 - Version 2.0.1
 - Fix: File browser default sample/instrument selection was wrong
 - Fix: Help messages on command effects did not work if there was no instrument on current row
