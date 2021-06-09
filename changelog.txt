@@ -1,3 +1,14 @@
+2021-06-09 - Version 2.0.3
+- New: Physical output volume setting hearing protection - If volume is above "F0", volume is reset to "F0" on power up and disconnecting/inserting headphone jack.
+- New: Bundling a song now exports all instruments in a new subfolder "Instruments"
+- Improved: Maximum output volume increased
+- Improved: Performance/CPU optimizations
+- Improved: Remote display - only send button presses when they are changed
+- Fix: Table - last row did not work if tic was set to FF
+- Fix: MIDI Mapping multiple instruments when viewing instrument screen caused mapping issues
+- Fix: Sample editor - Zoomed selection movements was inaccurate and had visual artifacts
+- Fix: Sampler - Note preview occasionally not working on slice mode
+
 2021-06-04 - Version 2.0.2
 - Fix: MIDI mappings could have erratic behavior if viewing mapped Instrument or Mixer
 - Fix: Changing tempo while playing back could slow down tempo for a brief period
