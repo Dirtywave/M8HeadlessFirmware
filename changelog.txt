@@ -1,3 +1,7 @@
+2021-06-13 - Version 2.0.4
+- Fix: HEADLESS "CPU TOO BUSY" on FM synth
+- Fix: Bundling instruments file name issue
+
 2021-06-09 - Version 2.0.3
 - New: Physical output volume setting hearing protection - If volume is above "F0", volume is reset to "F0" on power up and disconnecting/inserting headphone jack.
 - New: Bundling a song now exports all instruments in a new subfolder "Instruments"
