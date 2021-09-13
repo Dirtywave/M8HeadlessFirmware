@@ -1,3 +1,8 @@
+2021-09-13 - Version 2.0.6
+- Fixed: Sample editor - "PASTED INSTRUMENT" odd behavior/issue and showing the temp file as the sample name when exiting.
+- Fixed: Randomize instrumnet results in wrong note pitch
+- Fixed: Headless "CPU TOO BUSY" message from Version 2.0.5
+
 2021-08-23 - Version 2.0.5
 - Removed MIDI TRS type selection from MIDI settings
 - Added secret headphone protection disable option via file
@@ -5,7 +10,7 @@
 - Improved: Note preview and MIDI input notes are now part of a queue system for stability
 - Improved: Theme is saved and temp song saved on hardware and headless when exiting remote display application
 - Improved: Randomize instrument shortcut easteregg changed (???)
-- Fix: Potetial crash on MIDI receive sync modes
+- Fix: Potential crash on MIDI receive sync modes
 - Fix: Wav file "ERROR READING SAMPLE FORMAT" error fix on certain files
 - Fix: SD card removal could result in playback halting until a hard reset
 - Fix: When connecting to PC display application while in the effect help screen, navigation could get stuck
