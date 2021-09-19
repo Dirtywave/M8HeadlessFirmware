@@ -1,4 +1,11 @@
-2021-09-13 - Version 2.0.6B
+2021-09-19 - Version 2.0.7
+- Fixed(!!!): Hardware detection (beta vs production hardware) fix for some M8 production units that failed detection.
+- Fixed: Battery level indicator less aggressive range.
+- Fixed: Theme view - clearing name exited view.
+- Fixed: Macrosynth "PLUCKED" polyphony.
+- Fixed: Battery level indicator was broken on theme view.
+
+2021-09-15 - Version 2.0.6B
 - Fixed: Exiting sample editor cleared instrument settings.
 
 2021-09-13 - Version 2.0.6
