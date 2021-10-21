@@ -1,3 +1,34 @@
+2021-10-21 - Version 2.0.8
+- Improved: Better battery life- especially when unit is turned off. better battery life % gauge, better handling of low battery.
+- Fixed: Midi note input while using external MIDI sync without sync present caused first note to not play
+- Fixed: Midi note recording could show phrase notes from another phrase
+- Fixed: DEL (Delay) FX command with a 00 value would not trigger note/row
+- Fixed: MIDI song position receive did not work with song rows greater than 57
+- Fixed: Sample "pingpong" loop mode did not work on occasion.
+- Fixed: Multi-scope easter-egg now disables remote display while active.
+- Fixed: Bundling invalid instruments could cause a crash.
+- Fixed: Battery meter on production unit could occasionally show the wrong value.
+- Fixed: Crash mitigation from 2.0.X
+- Fixed: USB Serial could result in button presses when not connected to remote application from other bad programs
+- Fixed: FMsynth would cease to work when note pitch was very high due to modulation slots.
+- Fixed: Command FX interpolation action ([SHIFT]+[EDIT] on a selected range) now works with FF values.
+- Fixed: Song and rendering screen names could end up having a space as the name after deleting all characters
+- Fixed: Limit tap tempo to 999BPM
+- Fixed: Note preview with table transpose could be heard improperly
+- Fixed: FX command help screen could show the wrong instrument commands
+- Fixed: Instrument name help text used a decimal value to display the instrument number 
+- Fixed: Exiting selection mode in phrase and editing the highlighted cell resulted in the wrong cell being edited
+- Improved: When M8 crashes your song/changes are not lost.
+- Improved: Power button power-off time increased from 0.5 seconds to 1 second and added help message.
+- Improved: MIDI input note recording quantization improved.
+- Improved: DEL (Delay) FX command now fully works with CHA (chance) and RAN (random) commands
+- Improved: REP (Repeat) fx command now works with absolute instrument commands like LFO frequency etc.
+- Improved: TAB (Table) fx command now previewed with notes in phrases.
+- Improved: Song and sample overwrite warning messages added
+- Improved: HOPFF now has a help message
+- Improved: Crash mitigations and song instrument memory validation 
+- Improved: Battery meter on production hardware
+
 2021-09-19 - Version 2.0.7
 - Fixed(!!!): Hardware detection (beta vs production hardware) fix for some M8 production units that failed detection.
 - Fixed: Battery level indicator less aggressive range.
