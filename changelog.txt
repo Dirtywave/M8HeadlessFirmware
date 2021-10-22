@@ -1,3 +1,6 @@
+2021-10-22 - Version 2.0.8B
+- Fixed: Fatal crach when using MIDI OUTPUT "SONG" transport mode.
+ 
 2021-10-21 - Version 2.0.8
 - Improved: Better battery life- especially when unit is turned off. better battery life % gauge, better handling of low battery.
 - Fixed: Midi note input while using external MIDI sync without sync present caused first note to not play
