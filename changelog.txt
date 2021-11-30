@@ -1,3 +1,23 @@
+2021-11-27 - Version 2.0.9
+- New: Mini keyboard when in phrase, table, and instrument screens
+- Improved: Minor tweak to the font for "8" to distinguish from "B"
+- Improved: Startup sound now plays through headphones only when present. Max volume of the jingle is also lowered.
+- Improved: Auto sleep / powerdown is disabled when audio input has an active signal 
+- Improved: MIDI output sync clock always sent when activated in settings
+- Improved: MIDI map mode now works like a cue mode when in "LIVE" mode
+- Fixed: Hardcrash when set to send MIDI song position when in loop selection mode
+- Fixed: RAN (random) command was offset by 1. RAN01 or RAN10 did nothing.
+- Fixed: FM Synth could not use LFOs on some of the same parameters as the envelopes (eg: volume)
+- Fixed: Wavsynth OSC FX command would be delayed when switching to NOISE shape
+- Fixed: Midiout Inst. to only send program changes when chnaged. MPG (program change) fx always sends program change. 
+- Fixed: Incoming MIDI notes ignored Table TIC00
+- Fixed: Sampler OSC mode could play incorrect pitch/size when automating loop start position
+- Fixed: Rendering a song with tempo changes could cut rendering shorter than song length
+- Fixed: RET retrigger command now does not also retrigger groove GRV commands
+- Fixed: RET10 (retrig once) command causes note to retrigger again after an extended period of time
+- Fixed: OUTPUT VOLUME in project screen could jump well past E0 when quick editing (UP) above D0
+ 
+
 2021-10-22 - Version 2.0.8B
 - Fixed: Fatal crach when using MIDI OUTPUT "SONG" transport mode.
  
