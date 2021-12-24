@@ -1,3 +1,35 @@
+2021-12-24 - Version 2.5.0
+- New: Scale and microtonal support, new view can be found above groove
+- New: Dual mono input mode. Allows two independent mono sources into the mixer with fx sends
+- New: Wav file loop marker support, can be edited in the sample editor screen and stored with the wav file
+- New: Wav file slice marker support (limited to 32). Can be edited in the sample editor screen and stored with the wav file
+- New: Sample editor now has auto-slice and slice marker generation support in the "process" options
+- New: "POST: AD" LIMIT/CLIP mode - analog drive
+- New: PBN fx command for allowing continuous pitch bend sliding up or down
+- New: Mixer audio input fx commands for controlling volume and effects send levels
+- New: TSP fx command to control global note transpose
+- New: SNG fx command for hopping the given track to a specific song row
+- New: Sampler SLI command for cuing specific slice markers from file
+- New: Track MIDI input now supports poly mode, all tracks with the same MIDI channel will work in round-robin
+- New: Track MIDI input now recognizes Sustain pedal (cc64)
+- New: MIDI recording now has separate options for recording KILL and/or DELAY commands
+- New: Phrase and Table views now allow selection nudging if multiple rows and columns are selected using EDIT+UP/DOWN
+- New: Font - New lowercase option in the Theme view
+- Improved: Macrosynth "Plucked" shape now has 6 voices
+- Improved: Phrase and table no longer wrap when pasting data
+- Improved: Instrument preset load now allows loading of samples
+- Improved: THO in table now "HOPs" all columns, giving it a unique feature over HOP
+- Fixed: FMsynth OP 00 volume could alter the timbre/phase of the overall sound
+- Fixed: FMsynth SAW wave had the wrong phase offset when reset or triggered
+- Fixed: Bookmarks on Track 0 row 00 could be removed by deleting a chain in song view
+- Fixed: MIDI Instrument could send program change 00 when editing the PG value
+- Fixed: Note keyboard would disappear when connecting to remote display
+- Fixed: Deep cloning when out of phrases had no error message
+- Fixed: Loading samples with a path that was too long displayed no error message
+- Fixed: Phrase view would sometimes highlight last row when navigating
+- Fixed: Freeze/crash could occur with MIDI transport output set to SONG
+- Fixed: Very long samples could result in stopping sample playback and/or sample artifacts
+
 2021-11-27 - Version 2.0.9
 - New: Mini keyboard when in phrase, table, and instrument screens
 - Improved: Minor tweak to the font for "8" to distinguish from "B"
