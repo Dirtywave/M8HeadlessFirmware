@@ -1,3 +1,8 @@
+2021-12-28 - Version 2.5.0B
+- Fixed: Possible crash when using SCA command and editing notes in phrase
+- Fixed: Mixer volume fx commands for effects (VCH,VDE, amd VRE) were not working correctly
+- Improved: Drawing performance / optimizations of waveform in sample editor view
+
 2021-12-25 - Version 2.5.0A
 - Fixed: Pitch "PIT" fx command no longer worked for sliced samples
 
