@@ -1,3 +1,7 @@
+2021-12-30 - Version 2.5.0D
+- Fixed: MIDI sync output song position pointer was always sending 0
+- Fixed: Sample Editor "PROCESS:SLICE##" only went to 31 instead of 32
+
 2021-12-28 - Version 2.5.0C
 - Fixed: Possible crash when using SCA command and editing notes in phrase
 - Fixed: Mixer volume fx commands for effects (VCH,VDE, amd VRE) were not working correctly
