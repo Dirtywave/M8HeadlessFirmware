@@ -1,4 +1,5 @@
 2022-01-03 - Version 2.5.0E
+- Fixed: Midiout did not respect Instrument transpose disable for scales
 - Fixed: Note preview when using a different "KEY" in scale was incorrect
 
 2021-12-30 - Version 2.5.0D
