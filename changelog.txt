@@ -1,3 +1,6 @@
+2022-01-03 - Version 2.5.0E
+- Fixed: Note preview when using a different "KEY" in scale was incorrect
+
 2021-12-30 - Version 2.5.0D
 - Fixed: MIDI sync output song position pointer was always sending 0
 - Fixed: Sample Editor "PROCESS:SLICE##" only went to 31 instead of 32
