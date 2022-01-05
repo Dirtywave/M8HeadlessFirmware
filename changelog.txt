@@ -1,3 +1,7 @@
+2022-01-04 - Version 2.5.0F
+- Improved: Handling overlapping notes when recording notes via MIDI input
+- Fixed: Wavsynth did not respect Instrument transpose disable for scales
+
 2022-01-03 - Version 2.5.0E
 - Fixed: Midiout did not respect Instrument transpose disable for scales
 - Fixed: Note preview when using a different "KEY" in scale was incorrect
