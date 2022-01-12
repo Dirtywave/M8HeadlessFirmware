@@ -1,3 +1,10 @@
+2022-01-12 - Version 2.5.1
+- New: Multimode filter - LP>HP is a lowpass filter with RES controlling a 1 pole highpass
+- Fixed: Potential hard-crash while previewing samples
+- Fixed: Potential hard-crash while using Macrosynth plucked
+- Fixed: Rendering stems now includes global fx commands from adjacent tracks
+- Fixed: Sample editor to clear out loop markers when saving with slice cue points
+
 2022-01-04 - Version 2.5.0F
 - Improved: Handling overlapping notes when recording notes via MIDI input
 - Fixed: Wavsynth did not respect Instrument transpose disable for scales
