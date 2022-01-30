@@ -1,3 +1,17 @@
+2022-01-30 - Version 2.5.3
+- New: Tables can now pause with HOP command fx when it matches the row it's on
+- Improved: Midiout now uses scale intervals for ADD and CHD commands
+- Improved: ARP command now uses scale intervals
+- Improved: Do not reset file browser path for samples when loading a new sample
+- Fixed: Repeated RAN (Random) command with instrument retriggers could result in negative values
+- Fixed: Small audio dropout when using RAN (Random) could occur
+- Fixed: "ERROR IN SAMPLE FORMAT" on previewing sample folders
+- Fixed: Reverb no longer "pops" on start-up if there is no splash screen startup song
+- Fixed: Potential crash on render view when deleting characters in the file name
+- Fixed: Sampler large pitch LFO values could prohibit sample playback
+- Fixed: FMSynth microtonal issues with PIT mod destinations
+- Fixed: Typo in help text for REP in table
+
 2022-01-17 - Version 2.5.2
 - Fixed: Stem rendering always rendered reverb regardless of settings
 - Fixed: Sample editor - loop region end point marker not clearing when exiting sample editor
