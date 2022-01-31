@@ -3,6 +3,7 @@
 - Improved: Midiout now uses scale intervals for ADD and CHD commands
 - Improved: ARP command now uses scale intervals
 - Improved: Do not reset file browser path for samples when loading a new sample
+- Fixed: FMSynth PIT to ignore scales when instrument transpose is disabled
 - Fixed: Repeated RAN (Random) command with instrument retriggers could result in negative values
 - Fixed: Small audio dropout when using RAN (Random) could occur
 - Fixed: "ERROR IN SAMPLE FORMAT" on previewing sample folders
