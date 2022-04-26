@@ -1,3 +1,14 @@
+2022-04-26 - Version 2.6.0
+- New: Macrosynth models added - FLUTED, DIGITAL MOD, MORSE NOISE
+- New: Delay now works with feedback set to zero (single-shot delays now possible)
+- New: Sample Editor values that use sample position now support OPT+Navigating for snapping to song tempo
+- Improved: MIDIOUT program change and bank improved when using the same instrument in multiple tracks
+- Fix: Sampling during playback now disables currently selected track to prevent audio dropouts in recording
+- Fix: Song tempo could be mismatched between project view and right side tempo indication
+- Fix: MIDI output transport could send the wrong song position value
+- Fix: REP and RND commands reset when playing in single phrase mode and navigating between phrases
+- Fix: Sampler in OSC mode and modulating LOOP START position could stop sample playback
+
 2022-01-30 - Version 2.5.3
 - New: Tables can now pause with HOP command fx when it matches the row it's on
 - Improved: Midiout now uses scale intervals for ADD and CHD commands
