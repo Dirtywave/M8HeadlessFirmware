@@ -1,3 +1,39 @@
+2022-06-21 - Version 2.7.0
+- New: Song view: Selection render - While playback is stopped, create a selection and double tap [EDIT]
+- New: Song view: Time info - While playback is stopped, hold [OPT] on a song row to display song time and tick information
+- New: Mixer & Project - Song snapshot and recall - Use [SHIFT]+[OPT] to create snapshot, [SHIFT]+[EDIT] to recall
+- New: FM Synth osc shape "CLK" creates a single cycle sin useful for transient where FB sets phase position of connected OPs
+- New: FM Synth noise osc S&H amount to feedback parameter
+- New: FM Synth 3 new filtered noise osc shapes with feedback parameter mapped to filter resonance
+- New: Midiout instrument PORT parameter now has an internal mode
+- New: Effect Settings view can now be MIDI/Touchscreen mapped
+- New: Mute/Solo now mapped to MIDI notes on control channel (starting from 2nd lowest octave)
+- New: Midiout Bank MSB (CC0) is now sent before program change messages
+- Improved: MIDI mapping screen now allows editing assigned MIDI channel
+- Improved: Song queue loading more seamless, saving song no longer causes audio dropouts
+- Improved: Better multi-instrument handling on same track when using send effects. Less clicks
+- Improved: When using the TBL command, the table now plays at the speed the instrument is set to
+- Improved: Instrument volume interpolation improvements
+- Improved: Table tick speed FF (200hz mode) improvements with alignment of instrument triggers
+- Improved: Play button in oscilloscope mode no longer exits mode
+- Improved: Sample editor [OPT]+[LEFT] and [RIGHT] now snaps to 16th notes
+- Improved: Instrument tables are now stopped when a KIL command is executed
+- Improved: MIDI Settings view now displays instrument name when editing instrument assignments
+- Improved: Instrument name help text - Sample name now displayed when no instrument name is set
+- Fix: Note C-1 with PIT command could be ignored
+- Fix: Tempo could not reach 999 BPM from last version
+- Fix: Rendering length could be slightly incorrect
+- Fix: Phrase playback while navigating phrase could double-trigger first row
+- Fix: Sampler slice mode could show the wrong note played in the right-side note display
+- Fix: Sampler could have clicks/artifacts on ping-pong sample playback
+- Fix: HOP command in phrase did not work correctly with the first HOP digit
+- Fix: Typo in help text for fast-table mode (400hz, where it's actually 200hz)
+- Fix: Midimap view display rendering issues when editing midimapping above 16
+- Fix: Playback issues switching between phrase playback and song livemode queue was possible
+- Fix: M8 would become out of sync in MIDI clock receive mode when song queue load is used
+- Fix: Scale issues with Sampler slice mode
+- Fix: Rendering could report going over 100% complete under certain conditions
+
 2022-04-26 - Version 2.6.0
 - New: Macrosynth models added - FLUTED, DIGITAL MOD, MORSE NOISE
 - New: Delay now works with feedback set to zero (single-shot delays now possible)
