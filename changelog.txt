@@ -1,3 +1,9 @@
+2022-06-24 - Version 2.7.1
+- Improved: File save overwrite warnings added for Instruments, Themes, and scales. 
+- Improved: Added command effect help text for synth parameters that have fixed values (Filter type, limit type, Osc shape etc)
+- Improved: Sampler PLY command effect now continues playback even after end was previously reached
+- Fix: Sampler PIT command effect did not work correctly on low notes in slice mode when instrument transposition was engaged
+
 2022-06-21 - Version 2.7.0
 - New: Song view: Selection render - While playback is stopped, create a selection and double tap [EDIT]
 - New: Song view: Time info - While playback is stopped, hold [OPT] on a song row to display song time and tick information
