@@ -3,6 +3,8 @@
 - Improved: Added command effect help text for synth parameters that have fixed values (Filter type, limit type, Osc shape etc)
 - Improved: Sampler PLY command effect now continues playback even after end was previously reached
 - Fix: Sampler PIT command effect did not work correctly on low notes in slice mode when instrument transposition was engaged
+- Fix: 2.7.1A - Small fix for sample LFO loop mode ("timestretch")
+- Fix: 2.7.1C - Small fix for stem rendering taking a long time
 
 2022-06-21 - Version 2.7.0
 - New: Song view: Selection render - While playback is stopped, create a selection and double tap [EDIT]
