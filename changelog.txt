@@ -1,3 +1,18 @@
+2022-07-01 - Version 2.7.2
+- Improved: New boot menu for optional settings and testing. Hold [SHIFT]+[OPT] when powering on.
+- Improved: Playback can now be stopped while in file browser by toggling [SHIFT]+[PLAY]
+- Fix: Midiout CCI and CCJ was nonfunctional
+- Fix: Sampler did not respond to MIDI pitchbend wheel
+- Fix: FMSynth could overload the filter resulting in channel not working until reboot
+
+2022-06-24 - Version 2.7.1
+- Improved: File save overwrite warnings added for Instruments, Themes, and scales. 
+- Improved: Added command effect help text for synth parameters that have fixed values (Filter type, limit type, Osc shape etc)
+- Improved: Sampler PLY command effect now continues playback even after end was previously reached
+- Fix: Sampler PIT command effect did not work correctly on low notes in slice mode when instrument transposition was engaged
+- Fix: 2.7.1A - Small fix for sample LFO loop mode ("timestretch")
+- Fix: 2.7.1C - Small fix for stem rendering taking a long time
+
 2022-06-24 - Version 2.7.1
 - Improved: File save overwrite warnings added for Instruments, Themes, and scales. 
 - Improved: Added command effect help text for synth parameters that have fixed values (Filter type, limit type, Osc shape etc)
