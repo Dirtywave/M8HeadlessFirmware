@@ -1,5 +1,15 @@
+2022-07-08 - Version 2.7.3
+- New: Create directory added to file browser when saving
+- Improved: File browser general improvements, larger viewing area
+- Improved: New MIDI note input poly mode behavior for allocating track voices properly
+- Improved: Sample preview no longer uses current instrument's slice & transpose settings
+- Fix: MIDI Settings view MIDI input instrument assignments now reflect incoming program change messages
+- Fix: MIDI poly mode did not work on MIDI channel 16
+- Fix: FMSynth CLK osc could set the wrong phase if previously playing instrument used CLK osc
+- Fix: Project / Song save directory was reset on power cycle
+
 2022-07-01 - Version 2.7.2
-- Improved: New boot menu for optional settings and testing. Hold [SHIFT]+[OPT] when powering on.
+- Improved: New boot menu for optional settings and testing. Hold [SHIFT]+[OPT] when powering on
 - Improved: Playback can now be stopped while in file browser by toggling [SHIFT]+[PLAY]
 - Fix: Midiout CCI and CCJ was nonfunctional
 - Fix: Sampler did not respond to MIDI pitchbend wheel
