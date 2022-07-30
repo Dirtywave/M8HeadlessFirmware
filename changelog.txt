@@ -1,3 +1,9 @@
+2022-07-30 - Version 2.7.6
+- Improved: Better handling / less artifacts of instrument switching in the same track during playback.
+- Fix: Loading a wav file in instrument load did not work in version 2.7.5
+- Fix: Sorting a directory in browser view listed numbered files before directories
+- Fix: Small graphical issue with creating directory when in a long file path
+
 2022-07-28 - Version 2.7.5
 - Fix: Bundling a song with samples could lead to a crash or incomplete bundling.
 - Fix: Saving a sample from a bundle without editing the sample did not work.
