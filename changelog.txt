@@ -1,3 +1,9 @@
+2022-08-09 - Version 2.7.7
+- Improved: More better handling of instrument switching in the same track during playback, cleaner switch/mixing.
+- Fix: 2.7.6 issue with sample playback occasional slow volume attack
+- Fix: MIDI input poly mode may not have used all tracks during playback if song transpose was enabled
+- Fix: When using phrase playback loading a song, song would play random phrase
+
 2022-07-30 - Version 2.7.6
 - Improved: Better handling / less artifacts of instrument switching in the same track during playback.
 - Fix: Loading a wav file in instrument load did not work in version 2.7.5
