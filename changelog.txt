@@ -1,6 +1,6 @@
 2022-09-04 - Version 2.7.8
-- Fix: Speaker related crashes on M8 hardware due to excessive bass
-- Fix: Some 24bit wave files failed to open
+- Fix: Speaker related crashes on some M8 hardware units
+- Fix: 24bit wav file could fail to open
 - Fix: File browser - Refresh current directory on saving files
 - Fix: File browser - Song playback preview consistency issue and added messages
 - Fix: File browser - Instrument preview issue with some tables (TIC00 being held)
