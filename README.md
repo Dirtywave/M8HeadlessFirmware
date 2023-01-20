@@ -3,7 +3,7 @@ M8 Headless Precompiled Firmware. Used for Teensy 4.1 connected to a host comput
 
 Read the setup guide here: https://github.com/DirtyWave/M8Docs/blob/main/docs/M8HeadlessSetup.md
 
-See also: https://github.com/DirtyWave/M8DisplayTouchdesigner
+See also: https://github.com/derkyjadex/M8WebDisplay
 
 For optimal performance of the SD card, it should be formatted FAT32 using the SD Memory Card Formatter tool: https://www.sdcard.org/downloads/formatter/.
 The random read speed of the card must also be very good. Testing has shown two cards that perform well and are currently suggested: 
