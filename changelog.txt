@@ -1,3 +1,42 @@
+2023-03-22 - Version 3.0.0
+- Note!!!!: Output/Speaker volume has moved to the top of the mixer view (previously in project view)
+- Note!!!!: Songs that have previously had Volume assigned to an LFO will need to be adjusted manually due to a bug in volume calculation
+- New: Hypersynth instrument (stereo chord synth)
+- New: External instrument (send MIDI and receive audio for processing)
+- New: Envelopes and LFOs have been replaced with 4 configurable modulation slots
+-   New: Bipolar ADSR envelope - The release stage can be triggered via KILL command, new note-off note, or external MIDI input
+-   New: Drum Envelope - High initial peak value for transient shaping with a hold/body stage that slowly swells
+-   New: Follow envelope - Simple ADH (Attack, hold, decay) envelope that can be trigger by another instrument or track in the song
+-   New: Key or velocity modulation source for mapping note/velocity
+- New: Note Offs can be entered in the note column by deleting/clearing a empty note "---" via OPT+EDIT 
+- New: DJF Now has modes (LP:HP, LP:BP, or BP:HP)
+- New: Default groove (was groove 0) can be defined in the project view
+- New: Default scale and Key signature (was scale 0) can be set on the project view
+- New: Song preview has been added to the file browser when loading a song via START key (if the song is not currently playing)
+- New: Random name generator in the text entry "keyboard" view
+- New: Note Trigger indication for playing tracks located next to notes in info area
+- New: OFF Fx Command - Like KIL to stop sound but for use with ADSR to trigger key-release stage.
+- New: RMX FX Command - (Remix) Set the playhead to a specified position on all tracks to the right of command's track
+- New: RNL FX Command - (Random left) Randomize the command to the left of RNL a specified amount
+- New: TBX FX Command - (Aux table) Plays a second table in the given phrase that is played in conjunction (but not in sync) with the instrument's table
+- New: DEL FX Command implemented in table
+- Improved: REP FX Command (Repeat last effect) now has wider range for slower control
+- Improved: Midiout Instrument now has envelope nad LFO modulation for CCs
+- Improved: Delay send effect now has smoother transitions when changing delay time or tempo
+- Improved: Phrase and table share last edited value for command fx
+- Improved: To automatically select a command fx, press edit on a parameter in the Instrument and mod views to copy it's fx command
+- Improved: Phrase/Table: When pasting 16 rows starting on the top row, the cursor will stay on the top row instead of scrolling to the bottom
+- Improved: Added colors to the mute/solo "M" and "S" text in the right-side info area for visibility
+- Improved: REP commands not stopped in previous phrases now have a visual indication in current phrase screen as "^^" next to FX command label 
+- Improved: Scope has been improved when high pitch notes occur
+- Improved: Mixer has better metering. General UI improvements across all views
+- Improved: Sample editor - Slices now appear as markers and values can be copy/pasted (SHIFT+OPT, SHIFT+EDIT)
+- Improved: Sample editor - Ranges / Slices can be adjusted / set via Touchscreen+[EDIT]
+- Improved: Scales and Themes now support custom save folders
+- Fix: Midimap view visual scrolling issue on destinations
+- Fix: Midiout Program change and bank not sending on occasion
+- Fix: Sample OSC loop mode on tiny region could result in wrong waveform offset and pitch changes
+
 2022-09-04 - Version 2.7.8
 - Fix: Speaker related crashes on some M8 hardware units
 - Fix: 24bit wav file could fail to open
