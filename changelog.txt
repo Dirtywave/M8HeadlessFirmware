@@ -4,7 +4,7 @@
 - New: Hypersynth instrument (stereo chord synth)
 - New: External instrument (send MIDI and receive audio for processing)
 - New: Envelopes and LFOs have been replaced with 4 configurable modulation slots
--   New: Bipolar ADSR envelope - The release stage can be triggered via KILL command, new note-off note, or external MIDI input
+-   New: Bipolar ADSR envelope - The release stage can be triggered via new note-off note/command, or external MIDI input
 -   New: Drum Envelope - High initial peak value for transient shaping with a hold/body stage that slowly swells
 -   New: Follow envelope - Simple ADH (Attack, hold, decay) envelope that can be trigger by another instrument or track in the song
 -   New: Key or velocity modulation source for mapping note/velocity
@@ -12,11 +12,11 @@
 - New: DJF Now has modes (LP:HP, LP:BP, or BP:HP)
 - New: Default groove (was groove 0) can be defined in the project view
 - New: Default scale and Key signature (was scale 0) can be set on the project view
-- New: Song preview has been added to the file browser when loading a song via START key (if the song is not currently playing)
+- New: Song preview has been added to the file browser when loading a song via [PLAY] (if the song is not currently playing)
 - New: Random name generator in the text entry "keyboard" view
 - New: Note Trigger indication for playing tracks located next to notes in info area
 - New: OFF Fx Command - Like KIL to stop sound but for use with ADSR to trigger key-release stage.
-- New: RMX FX Command - (Remix) Set the playhead to a specified position on all tracks to the right of command's track
+- New: RMX FX Command - (Remix) Set the playhead to a specified position on all tracks to the left of command's track
 - New: RNL FX Command - (Random left) Randomize the command to the left of RNL a specified amount
 - New: TBX FX Command - (Aux table) Plays a second table in the given phrase that is played in conjunction (but not in sync) with the instrument's table
 - New: DEL FX Command implemented in table
