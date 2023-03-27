@@ -1,3 +1,11 @@
+2023-03-27 - Version 3.0.1
+- Fix: External Synth default volume was a bit quiet due to VOL FX command
+- Fix: External Instrument Program change message did not properly send bank
+- Fix: Sample Editor could save corrupt file if waveform was still being drawn while saving
+- Fix: Typo in FX command name for Trig env decay (Now: "DE[1-4]" ... was "SU[1-4]")
+- Fix: Interpolation issue / hard volume cut when not using an envelope for volume with the KIL command
+- Fix: Trig envelope could get "stuck" until power reset
+
 2023-03-22 - Version 3.0.0
 - Note!!!!: Output/Speaker volume has moved to the top of the mixer view (previously in project view)
 - Note!!!!: Songs that have previously had Volume assigned to an LFO will need to be adjusted manually due to a bug in volume calculation
