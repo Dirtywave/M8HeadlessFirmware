@@ -1,3 +1,9 @@
+2023-03-31 - Version 3.0.2
+- New: Sample editor now displays help text for selection length
+- Improved: External Synth - better envelope handling to prevent pops/clicks
+- Fix: External Synth - CC FX commands could cause "green dot" position indicator to be drawn wrong
+- Fix: Trig envelope could be set to the wrong position when switching between instruments on the same track
+
 2023-03-27 - Version 3.0.1
 - Fix: External Synth default volume was a bit quiet due to VOL FX command
 - Fix: External Instrument Program change message did not properly send bank
