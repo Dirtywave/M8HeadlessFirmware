@@ -1,4 +1,4 @@
-2023-04-08 - Version 3.0.3
+2023-04-08 - Version 3.0.3A
 - Improved: Hypersynth chords can now be copied/pasted via copy paste shortcut ([Shift]+[Opt], [Shift]+[Edit]) when cursor is on the chord row
 - Improved: Help text is now displayed when editing Midiout and External instrument CC values
 - Improved: Stem rendering is now possible with Midiout instruments using "Internal" mode
@@ -6,6 +6,7 @@
 - Fix: M8 could crash on Instrument Mod view if there is no instrument under certain conditions
 - Fix: Stem rendering did not apply global FX commands from a instrument table not actively playing in the current stemmed track
 - Fix: Headless: Settings / themes was not recalled on power-up
+- Fix: Inst/Table "clear unused" would clear aux tables and RNL triggered instruments
 
 2023-03-31 - Version 3.0.2
 - New: Sample editor now displays help text for selection length
