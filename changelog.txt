@@ -1,5 +1,5 @@
 2023-06-01 - Version 3.1.0
-- New: Big font option for M8 hardware accessible in Theme vierw under font options
+- New: Big font option for M8 hardware accessible in Theme view under font options
 - New: MIDIOUT Instrument - PIT and VOL FX commands added (VOL is sent as CC7)
 - Improved: Hypersynth - Editing chord values can now jump an octave relative to scale setting ([Edit]+[Up or Down])
 - Fix: Midi send transport stop when all tracks stopped playing
