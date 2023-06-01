@@ -1,3 +1,14 @@
+2023-06-01 - Version 3.1.0
+- New: Big font option for M8 hardware accessible in Theme vierw under font options
+- New: MIDIOUT Instrument - PIT and VOL FX commands added (VOL is sent as CC7)
+- Improved: Hypersynth - Editing chord values can now jump an octave relative to scale setting ([Edit]+[Up or Down])
+- Fix: Midi send transport stop when all tracks stopped playing
+- Fix: MIDI MAPPING view potential crash after instrument change/deletion
+- Fix: Live quantize setting in project could result in misaligned chains when cuing
+- Fix: Instrument - Changing TIC rate away from 00 needed the track to restart to take affect
+- Fix: Sampler - Clearing/removing sample name (EDIT+OPT) in sampler allowed sample to continue playing
+- Fix: Groove - Interpolate shortcut did not work 
+
 2023-04-28 - Version 3.0.4
 - Fix: Critical issue with sampler when saving files sometimes failed to save
 - New: Phrase note fill shortcuts - While in selection mode highlight note column and rows and use:
