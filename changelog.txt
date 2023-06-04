@@ -1,3 +1,6 @@
+2023-06-04 - Version 3.1.1
+- Fix: Midiout program change sent erroneous or frequent messages
+
 2023-06-01 - Version 3.1.0
 - New: Big font option for M8 hardware accessible in Theme view under font options
 - New: MIDIOUT Instrument - PIT and VOL FX commands added (VOL is sent as CC7)
@@ -5,7 +8,7 @@
 - Fix: Midi send transport stop when all tracks stopped playing
 - Fix: MIDI MAPPING view potential crash after instrument change/deletion
 - Fix: Live quantize setting in project could result in misaligned chains when cuing
-- Fix: Instrument - Changing TIC rate away from 00 needed the track to restart to take affect
+- Fix: Instrument - Changing TIC rate away from 00 needed the track to restart to take effect
 - Fix: Sampler - Clearing/removing sample name (EDIT+OPT) in sampler allowed sample to continue playing
 - Fix: Groove - Interpolate shortcut did not work 
 
