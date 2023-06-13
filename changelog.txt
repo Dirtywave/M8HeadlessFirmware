@@ -1,4 +1,4 @@
-2023-06-11 - Version 3.1.2
+2023-06-13 - Version 3.1.2
 - New: Added sample editor processes: delete, duplicate, silence, fade in, fade out, crossfade loop
 - Improved: Sample loop playback with loop markers now has seamless looping
 - Improved: Sample editor displaying waveform selection and markers accuracy 
@@ -6,7 +6,6 @@
 - Fix: Stem rendering failing when samples have not been initialized
 - Fix: Rendering could include audio input / USB audio input interference
 - Fix: Sample editor playback quickly faded volume up from zero, undesired for checking for clicks at beginning of sample
-- Fix: Phrase did not display keyboard in big font mode if preview was disabled
 - Fix: Song view with big font - Show right side info when using [Opt+Left/Right] quick-mute shortcuts
 
 2023-06-04 - Version 3.1.1
