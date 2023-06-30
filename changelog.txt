@@ -1,3 +1,14 @@
+2023-06-30 - Version 3.2.0
+- New: Instrument Modulation can now modulate modulators
+- Improved: Sampler supports up to 128 slice markers (from 32)
+- Improved: Mute/Solo display in Song view next to track numbers
+- Improved: Tracking modulation can now disable velocity to volume using "Velocity (Takeover)" as source.
+- Improved: MIDI Input record channel now works with the "NOTE PREVIEW" setting in project view when auditioning notes
+- Fix: Sample playback with LFO to loop start could have dropouts
+- Fix: Wavsynth - Possible CPU too busy messages when playing back multiple tracks
+- Fix: Possible crash with RMX FX command on retrieving song length (Hold OPT on song position with playback stopped)
+- Fix: Hypersynth chord editing values could jump from previous chord edited value
+
 2023-06-16 - Version 3.1.4
 - Fix: Sampler LFO on Loop Start issues/artifacts from version 3.1
 - Fix: Big font effects list screen could have empty instrument section (still)
