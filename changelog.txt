@@ -1,3 +1,13 @@
+2023-07-08 - Version 3.2.1
+- New: Project tempo and transpose can now be MIDI & touchscreen mapped
+- New: Project view now has nudge option "<>" for tempo
+- Fix: Sample editor undo could cause crash when undoing a recording
+- Fix: Sample editor processes could result in pops/clicks on certain microSD cards
+- Fix: Sample editor slice markers could get lost/scrambled when deleting a selected area
+- Fix: MIDIOUT CHD 3rd interval could be played at wrong octave when transpose was disabled
+- Fix: Big font mode on phrase: info area could have drawing issues when selection was active
+- Fix: Theme view could have display issue when first viewing theme
+
 2023-06-30 - Version 3.2.0
 - New: Instrument Modulation can now modulate modulators
 - Improved: Sampler supports up to 128 slice markers (from 32)
