@@ -1,4 +1,9 @@
-2023-07-08 - Version 3.2.1
+2023-07-12 - Version 3.2.2
+- Improved: Touchscreen MIDI mapping performance improvements on busy projects
+- Fix: Charge status issue on some M8 production units
+- Fix: Audible artifacts when viewing Inst. Mod view using mod modulation from MOD4 to MOD1
+
+2023-07-10 - Version 3.2.1
 - New: Project tempo and transpose can now be MIDI & touchscreen mapped
 - New: Project view now has nudge option "<>" for tempo
 - Fix: Sample editor undo could cause crash when undoing a recording
