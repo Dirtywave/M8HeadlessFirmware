@@ -1,3 +1,17 @@
+2023-09-14 - Version 3.2.4
+- Fix: Instrument Modulation to Modulation could not work correctly on power-up
+- Fix: MIDIOUT Instrument ADD FX command would not do negative relative FX values
+- Fix: MIDIOUT Internal MIDI mode did not work with note-off events for control map mode (Mute/Solo)
+- Fix: Some wav samples with loop markers would not load the marker information
+- Fix: Instrument "Failed to save" erroneous message when switching instruments (not saving)
+- Fix: Sample Editor Automatic-slicing could have a tiny first slice
+- Fix: Sample Editor "ARM" marker was missing from the VU meter for sampling input
+- Fix: Phrase Random-Fill notes down could end up removing notes from sequence
+- Fix: Table - Editing FX command via EDIT+LEFT/RIGHT would stop before end of list
+- Fix: OFF (Note-off) FX command on the same line as a KIL would overwrite the KIL event
+- Fix: DEL (Delay row) with HOP fx commands would not play note once HOP occurred
+- Fix: Reporting the current song time (hold OPT when playback is stopped) would freeze M8 if all song rows (00-FF) were consumed
+
 2023-08-13 - Version 3.2.3
 - Improved: Aux table FX command TBX can now use THO on the same row to HOP to a table position
 - Fix: Battery charge status (charging animation) issue on some hardware M8 units
