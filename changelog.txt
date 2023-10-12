@@ -1,3 +1,11 @@
+2023-10-12 - Version 3.2.5
+Fix: Rendering could cause file corruption when samples have not been initialized/played before rendering began
+Fix: Rendering could have wrong length
+Fix: Rendering could have an initial fade-in at beginning
+Fix: Sample editor loop point playback could sound incorrectly when the loop end point was at end of file
+Fix: Midiout Instrument: Help text for MPB and MPG was wrong
+Fix: Big font mode could display the wrong mini map when quickly navigating screens
+
 2023-09-14 - Version 3.2.4
 - Fix: Instrument Modulation to Modulation could not work correctly on power-up
 - Fix: MIDIOUT Instrument ADD FX command would not do negative relative FX values
