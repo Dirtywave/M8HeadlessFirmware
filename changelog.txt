@@ -1,3 +1,20 @@
+2023-11-10 - Version 3.2.6
+Improved: MIDI sync and transport improved when switching songs in song load queue mode
+Improved: MIDI send sync and/or send transport will transmit while receive sync and/or transport is enabled
+Improved: Project - Tempo nudge now works with receive MIDI sync mode
+Fix: MIDI sync latency issue when receive transport is in song mode
+Fix: Stereo Delay could have audible artifacts when in receive MIDI sync mode or changing feedback parameter
+Fix: Rendering song with External instrument type active could have audible artifacts in render
+Fix: Sampler - Rendering issue with sampler and preserving transients
+Fix: Sampler - OSC mode was not working correctly
+Fix: Sampler - Quick sample browse (EDIT+LEFT/RIGHT on sample name) did not work with uppercase "WAV" file selection
+Fix: Sample Editor - Normalization did not work after performing a cross fade loop
+Fix: Sample Editor - Deleting a selection would not update loop points correctly
+Fix: Note KIL FX command would not allow new instrument triggers if note value was not set
+Fix: Tables with TIC00 would not work with HOP FX command when HOP value is the same as the current row
+Fix: Bigfont mode mini-map could show the wrong location when navigating
+Fix: Song - Vertical scroll position could jump when exiting selection
+
 2023-10-12 - Version 3.2.5
 Fix: Rendering could cause file corruption when samples have not been initialized/played before rendering began
 Fix: Rendering could have wrong length
