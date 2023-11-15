@@ -1,3 +1,7 @@
+2023-11-15 - Version 3.2.7
+Fix: MIDI Clock was not being sent if playback was stopped (3.2.6 issue)
+Fix: Render - Render option "Repeat song XX" would cause artifacts on repeats 
+
 2023-11-10 - Version 3.2.6
 Improved: MIDI sync and transport improved when switching songs in song load queue mode
 Improved: MIDI send sync and/or send transport will transmit while receive sync and/or transport is enabled
