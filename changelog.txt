@@ -1,3 +1,41 @@
+2024-04-29 - Version 3.3.0
+New: M8 Model:02 Support
+New: Time Stats view (playing time, song work time, system/battery and set file date) accessible from project view
+New: Cursor style changed
+New: Instrument modulation new destination - "MOD BINV" (Mod Both - Inverse) Like "MOD BOTH" but with an inverted rate
+Improved: CPU Optimizations
+Improved: Stuck-key reliability  
+Improved: SD card sample streaming performance improvements
+Improved: Theme view - Changing theme colors only refreshes screen when needed
+Fix: DEL FX command was not working in tables
+Fix: XRZ Reverb Freeze FX command had audible artifacts
+Fix: PSL FX command (pitch slide) was not working in tables running at TICFF
+Fix: RET FX command (retrig) in a aux table could affect TBX command (aux table)
+Fix: NTH FX command help text was cut off on big font mode
+Fix: VMV FX command (main volume) had incorrect help text for tables
+Fix: Selection playback looping in phrase and chain did not work correctly with HOP and grooves
+Fix: Hypersynth - Chord changing no longer affects playback when CHD Fx command is active
+Fix: Sampler - SLI FX command (slice) used with STA (start offset) was working incorrectly
+Fix: Sampler - Playing invalid sample markers are now ignored
+Fix: MIDIOUT - Pitch/Velocity Tracking Modulator was reset on note offs 
+Fix: Song view - Switching to live mode after playing a selected region could make live mode not process cues
+Fix: file Browser - Previewing or selecting after sorting directory could select the wrong sample
+Fix: Instrument modulation view - [OPT]+[LEFT or RIGHT] navigation could move cursor into an empty region
+Fix: Phrase view - [OPT]+[LEFT or RIGHT] navigation into a track chain with no phrases was not skipped
+Fix: Instrument Panning - hard left pan could bleed into the right channel
+Fix: File Browser / Song - Deleting a wav file in browser should be removed from active song
+Fix: Song Bundling - Overwriting now checks wav file sizes when determining changes made for copying
+Fix: Sample Editor - Crop / Delete to remove slice markers that are out of range
+Fix: Sample Editor "Overwrite" now respects changing the sample name field
+Fix: ADSR Envelope assigned to panning did not work with a negative amount
+Fix: ADSR Envelope release was not affected by decay/release FX command
+Fix: MIDI input to an external MIDIOUT instrument caused hanging notes when in poly mode
+Fix: Switching to headphones on some M8 models may have speaker related optimizations enabled
+Fix: Render - Repeat Song option could not be respected
+Fix: Song View - Exiting selection mode could cause cursor to jump to an unexpected row
+Fix: Naming a song while song load queue is trigger would result in not being able to exit the on-screen keyboard
+Fix: Theme color changes to only refresh entire display when necessary
+
 2023-11-15 - Version 3.2.7
 Fix: MIDI Clock was not being sent if playback was stopped (3.2.6 issue)
 Fix: Render - Render option "Repeat song XX" would cause artifacts on repeats 
