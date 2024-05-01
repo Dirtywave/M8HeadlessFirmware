@@ -1,3 +1,7 @@
+2024-05-01 - Version 3.3.0A
+Fix: Stats view - Battery charge timer was not resetting
+Fix: Song view - Selection mode playback bug with looping selection 
+
 2024-04-29 - Version 3.3.0
 New: M8 Model:02 Support
 New: Time Stats view (playing time, song work time, system/battery and set file date) accessible from project view
