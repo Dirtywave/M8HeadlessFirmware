@@ -1,3 +1,12 @@
+2024-05-24 - Version 3.3.1
+Fix: Dual mono input mode FX sends were broken / routed incorrectly
+Fix: Rendering - Repeat did not work correctly 
+Fix: Sample Editor - Using OPT+DIRECTION to selection snap to tempo could have a rounding error
+Fix: Sample Editor - If track was muted preview was not possible
+Fix: Instrument - Copy/paste help text was not present when pasting
+Fix: Instrument - Clear copy/paste buffer when starting a new song
+Fix: Song - Empty phrase with a Instrument column value present colored the chain as empty
+
 2024-05-01 - Version 3.3.0A
 Fix: Stats view - Battery charge timer was not resetting
 Fix: Song view - Selection mode playback bug with looping selection 
