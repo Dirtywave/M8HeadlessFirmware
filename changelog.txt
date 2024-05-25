@@ -1,3 +1,6 @@
+2024-05-25 - Version 3.3.1A
+Fix: Rendering - Repeat did not work correctly 
+
 2024-05-24 - Version 3.3.1
 Fix: Dual mono input mode FX sends were broken / routed incorrectly
 Fix: Rendering - Repeat did not work correctly 
