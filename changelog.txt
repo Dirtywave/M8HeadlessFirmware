@@ -1,3 +1,10 @@
+2024-06-03 - Version 3.3.2
+Fix: Phrase OPT+LEFT/RIGHT navigation could crash if adjacent track has a chain with no phrases 
+Fix: Drum Envelope - Note off messages were not always ignored
+Fix: Sample editor - Track number help text for Ext. instrument track sampling was incorrect
+Fix: Sample editor - Exit editor when microSD Card is removed to prevent attempting to record without a card present
+Fix: LFO "Drunk" shape misbehaving on reboot if Freq is set to zero
+
 2024-05-25 - Version 3.3.1A
 Fix: Rendering - Repeat did not work correctly 
 
