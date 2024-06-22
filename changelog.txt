@@ -1,3 +1,15 @@
+2024-06-22 - Version 3.3.3
+Improved: Drawing waveform oscilloscope optimizations (including easter-egg on Model:02)
+Improved: When in MIDI sync receive mode, display a "WAITING FOR SYNC" message when there is no incoming sync
+Fix: Fixed rare hard-crash using sampler instruments
+Fix: Sampler - Disable file based loop markers when using slice
+Fix: Sampler - PIT FX command range was limited when using slices
+Fix: Sampler - Degrade automation never reset fully to zero (re-enable interpolation) until sampler retriggered
+Fix: Phrase OPT+LEFT/RIGHT navigation could crash if adjacent track has a chain with no phrases (again)
+
+2024-06-11 - Version 3.3.2A
+Fix: Disabled a battery saving method on Model:02 that caused hard-crashes on some units
+
 2024-06-03 - Version 3.3.2
 Fix: Phrase OPT+LEFT/RIGHT navigation could crash if adjacent track has a chain with no phrases 
 Fix: Drum Envelope - Note off messages were not always ignored
