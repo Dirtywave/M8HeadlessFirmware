@@ -1,104 +1,145 @@
+2024-07-25 - Version 4.0.0
+- New: Configurable 3 band biquad EQ added to main mix, global effects, and instruments
+- New: Launchpad Pro MK3 MIDI Control Surface support added in MIDI Settings view
+- New: Instrument Pool view for managing instruments as a list
+- New: Post-filter LIMIT/CLIP distortion modes added: POST:W1 and POST:W2 (Waveshaper 1 and 2)
+- New: Wavsynth "OVERFLOW" shapes (literal data overflow) replaced with 60+ wavetables
+- New: Wavsynth MIRROR parameter renamed SCAN due to being able to scan the new wavetables
+- New: ZDF (zero delay feedback) lowpass and highpass filter added to filter type
+- New: Scales now have a global tuning parameter to diverge from A440
+- New: Table TIC FE mode - The first 12 rows of the table are mapped to note
+- New: FX commands: DJC,DJR,DJT (renamed DJF to DJC) for sequencing the DJ filter
+- New: FX command: RTO (Repeat To) - Holds the repeat command (REP) at a specific value
+- New: FX command: ARC (Arp config) - Set the tic rate, arp direction, and number of octaves for the ARP command
+- New: FX command: EQM and EQI FX commands for setting the EQ bank for song mix or the current instrument
+- New: FX command: GGR (Global groove) - Set the groove for all tracks
+- New: FX command: INS (Instrument) - Set the current instrument
+- Improved: No longer exit from Live-mode after loading a song 
+- Improved: "DRUNK" LFO shape no longer retriggers from zero
+- Improved: ADSR now has better scaling on the low range (more small values)
+- Improved: PITCH mod destination amount now has better scaling on the low range
+- Improved: Play button always stops if sequence is running (regardless of phrase / chain / song playback)
+- Improved: FX list view has a new category for instrument envelopes
+- Improved: Trig envelope now triggers correctly if the trigger event happened before the instrument started
+- Improved: Delay send FX now has a mono/summed input (was left channel only before)
+- Improved: Pre-load samples on song queued load for better initial triggering of samples 
+- Fix: When out of phrases, cloning did not display an error
+- Fix: Disable remote display for boot options view
+- Fix: Instrument - Delete shortcut ([OPT]+[EDIT]) on LOAD or SAVE instrument deleted characters from instrument name
+- Fix: Tearing artifact on value sliders (more prevalent on Model:02)
+- Fix: Instrument Mod - Trig envelope did not work correctly when using multiple instruments (some without a trig mod) in the same track
+- Fix: Big-font mode song navigation issue on track 8 if the info area appeared
+- Fix: Info area mini-map displayed the wrong [P] position when navigating up from Chain view
+- Fix: Phrase - When using scales it was possible to edit notes past note number 127 
+- Fix: Cursor clearing issues on big font mode when toggling right side info area
+- Fix: When editing down a note using scale on the lowest octave, it could toggle between C-1 and the lowest scale note
+- Fix: Sample Editor - Xfade loop could cause distortion with 24 bit wav files 
+- Fix: DEL (Delay FX command) with a HOPFF in the same row caused a crash
+
+2024-06-23 - Version 3.3.3A
+- Fix: Bigfont mode easteregg-mode issue with mixer screen
+
 2024-06-22 - Version 3.3.3
-Improved: Drawing waveform oscilloscope optimizations (including easter-egg on Model:02)
-Improved: When in MIDI sync receive mode, display a "WAITING FOR SYNC" message when there is no incoming sync
-Fix: Fixed rare hard-crash using sampler instruments
-Fix: Sampler - Disable file based loop markers when using slice
-Fix: Sampler - PIT FX command range was limited when using slices
-Fix: Sampler - Degrade automation never reset fully to zero (re-enable interpolation) until sampler retriggered
-Fix: Phrase OPT+LEFT/RIGHT navigation could crash if adjacent track has a chain with no phrases (again)
+- Improved: Drawing waveform oscilloscope optimizations (including easter-egg on Model:02)
+- Improved: When in MIDI sync receive mode, display a "WAITING FOR SYNC" message when there is no incoming sync
+- Fix: Fixed rare hard-crash using sampler instruments
+- Fix: Sampler - Disable file based loop markers when using slice
+- Fix: Sampler - PIT FX command range was limited when using slices
+- Fix: Sampler - Degrade automation never reset fully to zero (re-enable interpolation) until sampler retriggered
+- Fix: Phrase OPT+LEFT/RIGHT navigation could crash if adjacent track has a chain with no phrases (again)
 
 2024-06-11 - Version 3.3.2A
-Fix: Disabled a battery saving method on Model:02 that caused hard-crashes on some units
+- Fix: Disabled a battery saving method on Model:02 that caused hard-crashes on some units
 
 2024-06-03 - Version 3.3.2
-Fix: Phrase OPT+LEFT/RIGHT navigation could crash if adjacent track has a chain with no phrases 
-Fix: Drum Envelope - Note off messages were not always ignored
-Fix: Sample editor - Track number help text for Ext. instrument track sampling was incorrect
-Fix: Sample editor - Exit editor when microSD Card is removed to prevent attempting to record without a card present
-Fix: LFO "Drunk" shape misbehaving on reboot if Freq is set to zero
+- Fix: Phrase OPT+LEFT/RIGHT navigation could crash if adjacent track has a chain with no phrases 
+- Fix: Drum Envelope - Note off messages were not always ignored
+- Fix: Sample editor - Track number help text for Ext. instrument track sampling was incorrect
+- Fix: Sample editor - Exit editor when microSD Card is removed to prevent attempting to record without a card present
+- Fix: LFO "Drunk" shape misbehaving on reboot if Freq is set to zero
 
 2024-05-25 - Version 3.3.1A
-Fix: Rendering - Repeat did not work correctly 
+- Fix: Rendering - Repeat did not work correctly 
 
 2024-05-24 - Version 3.3.1
-Fix: Dual mono input mode FX sends were broken / routed incorrectly
-Fix: Rendering - Repeat did not work correctly 
-Fix: Sample Editor - Using OPT+DIRECTION to selection snap to tempo could have a rounding error
-Fix: Sample Editor - If track was muted preview was not possible
-Fix: Instrument - Copy/paste help text was not present when pasting
-Fix: Instrument - Clear copy/paste buffer when starting a new song
-Fix: Song - Empty phrase with a Instrument column value present colored the chain as empty
+- Fix: Dual mono input mode FX sends were broken / routed incorrectly
+- Fix: Rendering - Repeat did not work correctly 
+- Fix: Sample Editor - Using OPT+DIRECTION to selection snap to tempo could have a rounding error
+- Fix: Sample Editor - If track was muted preview was not possible
+- Fix: Instrument - Copy/paste help text was not present when pasting
+- Fix: Instrument - Clear copy/paste buffer when starting a new song
+- Fix: Song - Empty phrase with a Instrument column value present colored the chain as empty
 
 2024-05-01 - Version 3.3.0A
-Fix: Stats view - Battery charge timer was not resetting
-Fix: Song view - Selection mode playback bug with looping selection 
+- Fix: Stats view - Battery charge timer was not resetting
+- Fix: Song view - Selection mode playback bug with looping selection 
 
 2024-04-29 - Version 3.3.0
-New: M8 Model:02 Support
-New: Time Stats view (playing time, song work time, system/battery and set file date) accessible from project view
-New: Cursor style changed
-New: Instrument modulation new destination - "MOD BINV" (Mod Both - Inverse) Like "MOD BOTH" but with an inverted rate
-Improved: CPU Optimizations
-Improved: Stuck-key reliability  
-Improved: SD card sample streaming performance improvements
-Improved: Theme view - Changing theme colors only refreshes screen when needed
-Fix: DEL FX command was not working in tables
-Fix: XRZ Reverb Freeze FX command had audible artifacts
-Fix: PSL FX command (pitch slide) was not working in tables running at TICFF
-Fix: RET FX command (retrig) in a aux table could affect TBX command (aux table)
-Fix: NTH FX command help text was cut off on big font mode
-Fix: VMV FX command (main volume) had incorrect help text for tables
-Fix: Selection playback looping in phrase and chain did not work correctly with HOP and grooves
-Fix: Hypersynth - Chord changing no longer affects playback when CHD Fx command is active
-Fix: Sampler - SLI FX command (slice) used with STA (start offset) was working incorrectly
-Fix: Sampler - Playing invalid sample markers are now ignored
-Fix: MIDIOUT - Pitch/Velocity Tracking Modulator was reset on note offs 
-Fix: Song view - Switching to live mode after playing a selected region could make live mode not process cues
-Fix: file Browser - Previewing or selecting after sorting directory could select the wrong sample
-Fix: Instrument modulation view - [OPT]+[LEFT or RIGHT] navigation could move cursor into an empty region
-Fix: Phrase view - [OPT]+[LEFT or RIGHT] navigation into a track chain with no phrases was not skipped
-Fix: Instrument Panning - hard left pan could bleed into the right channel
-Fix: File Browser / Song - Deleting a wav file in browser should be removed from active song
-Fix: Song Bundling - Overwriting now checks wav file sizes when determining changes made for copying
-Fix: Sample Editor - Crop / Delete to remove slice markers that are out of range
-Fix: Sample Editor "Overwrite" now respects changing the sample name field
-Fix: ADSR Envelope assigned to panning did not work with a negative amount
-Fix: ADSR Envelope release was not affected by decay/release FX command
-Fix: MIDI input to an external MIDIOUT instrument caused hanging notes when in poly mode
-Fix: Switching to headphones on some M8 models may have speaker related optimizations enabled
-Fix: Render - Repeat Song option could not be respected
-Fix: Song View - Exiting selection mode could cause cursor to jump to an unexpected row
-Fix: Naming a song while song load queue is trigger would result in not being able to exit the on-screen keyboard
-Fix: Theme color changes to only refresh entire display when necessary
+- New: M8 Model:02 Support
+- New: Time Stats view (playing time, song work time, system/battery and set file date) accessible from project view
+- New: Cursor style changed
+- New: Instrument modulation new destination - "MOD BINV" (Mod Both - Inverse) Like "MOD BOTH" but with an inverted rate
+- Improved: CPU Optimizations
+- Improved: Stuck-key reliability  
+- Improved: SD card sample streaming performance improvements
+- Improved: Theme view - Changing theme colors only refreshes screen when needed
+- Fix: DEL FX command was not working in tables
+- Fix: XRZ Reverb Freeze FX command had audible artifacts
+- Fix: PSL FX command (pitch slide) was not working in tables running at TICFF
+- Fix: RET FX command (retrig) in a aux table could affect TBX command (aux table)
+- Fix: NTH FX command help text was cut off on big font mode
+- Fix: VMV FX command (main volume) had incorrect help text for tables
+- Fix: Selection playback looping in phrase and chain did not work correctly with HOP and grooves
+- Fix: Hypersynth - Chord changing no longer affects playback when CHD Fx command is active
+- Fix: Sampler - SLI FX command (slice) used with STA (start offset) was working incorrectly
+- Fix: Sampler - Playing invalid sample markers are now ignored
+- Fix: MIDIOUT - Pitch/Velocity Tracking Modulator was reset on note offs 
+- Fix: Song view - Switching to live mode after playing a selected region could make live mode not process cues
+- Fix: file Browser - Previewing or selecting after sorting directory could select the wrong sample
+- Fix: Instrument modulation view - [OPT]+[LEFT or RIGHT] navigation could move cursor into an empty region
+- Fix: Phrase view - [OPT]+[LEFT or RIGHT] navigation into a track chain with no phrases was not skipped
+- Fix: Instrument Panning - hard left pan could bleed into the right channel
+- Fix: File Browser / Song - Deleting a wav file in browser should be removed from active song
+- Fix: Song Bundling - Overwriting now checks wav file sizes when determining changes made for copying
+- Fix: Sample Editor - Crop / Delete to remove slice markers that are out of range
+- Fix: Sample Editor "Overwrite" now respects changing the sample name field
+- Fix: ADSR Envelope assigned to panning did not work with a negative amount
+- Fix: ADSR Envelope release was not affected by decay/release FX command
+- Fix: MIDI input to an external MIDIOUT instrument caused hanging notes when in poly mode
+- Fix: Switching to headphones on some M8 models may have speaker related optimizations enabled
+- Fix: Render - Repeat Song option could not be respected
+- Fix: Song View - Exiting selection mode could cause cursor to jump to an unexpected row
+- Fix: Naming a song while song load queue is trigger would result in not being able to exit the on-screen keyboard
+- Fix: Theme color changes to only refresh entire display when necessary
 
 2023-11-15 - Version 3.2.7
-Fix: MIDI Clock was not being sent if playback was stopped (3.2.6 issue)
-Fix: Render - Render option "Repeat song XX" would cause artifacts on repeats 
+- Fix: MIDI Clock was not being sent if playback was stopped (3.2.6 issue)
+- Fix: Render - Render option "Repeat song XX" would cause artifacts on repeats 
 
 2023-11-10 - Version 3.2.6
-Improved: MIDI sync and transport improved when switching songs in song load queue mode
-Improved: MIDI send sync and/or send transport will transmit while receive sync and/or transport is enabled
-Improved: Project - Tempo nudge now works with receive MIDI sync mode
-Fix: MIDI sync latency issue when receive transport is in song mode
-Fix: Stereo Delay could have audible artifacts when in receive MIDI sync mode or changing feedback parameter
-Fix: Rendering song with External instrument type active could have audible artifacts in render
-Fix: Sampler - Rendering issue with sampler and preserving transients
-Fix: Sampler - OSC mode was not working correctly
-Fix: Sampler - Quick sample browse (EDIT+LEFT/RIGHT on sample name) did not work with uppercase "WAV" file selection
-Fix: Sample Editor - Normalization did not work after performing a cross fade loop
-Fix: Sample Editor - Deleting a selection would not update loop points correctly
-Fix: Note KIL FX command would not allow new instrument triggers if note value was not set
-Fix: Tables with TIC00 would not work with HOP FX command when HOP value is the same as the current row
-Fix: Bigfont mode mini-map could show the wrong location when navigating
-Fix: Song - Vertical scroll position could jump when exiting selection
+- Improved: MIDI sync and transport improved when switching songs in song load queue mode
+- Improved: MIDI send sync and/or send transport will transmit while receive sync and/or transport is enabled
+- Improved: Project - Tempo nudge now works with receive MIDI sync mode
+- Fix: MIDI sync latency issue when receive transport is in song mode
+- Fix: Stereo Delay could have audible artifacts when in receive MIDI sync mode or changing feedback parameter
+- Fix: Rendering song with External instrument type active could have audible artifacts in render
+- Fix: Sampler - Rendering issue with sampler and preserving transients
+- Fix: Sampler - OSC mode was not working correctly
+- Fix: Sampler - Quick sample browse (EDIT+LEFT/RIGHT on sample name) did not work with uppercase "WAV" file selection
+- Fix: Sample Editor - Normalization did not work after performing a cross fade loop
+- Fix: Sample Editor - Deleting a selection would not update loop points correctly
+- Fix: Note KIL FX command would not allow new instrument triggers if note value was not set
+- Fix: Tables with TIC00 would not work with HOP FX command when HOP value is the same as the current row
+- Fix: Bigfont mode mini-map could show the wrong location when navigating
+- Fix: Song - Vertical scroll position could jump when exiting selection
 
 2023-10-12 - Version 3.2.5
-Fix: Rendering could cause file corruption when samples have not been initialized/played before rendering began
-Fix: Rendering could have wrong length
-Fix: Rendering could have an initial fade-in at beginning
-Fix: Sample editor loop point playback could sound incorrectly when the loop end point was at end of file
-Fix: Midiout Instrument: Help text for MPB and MPG was wrong
-Fix: Big font mode could display the wrong mini map when quickly navigating screens
+- Fix: Rendering could cause file corruption when samples have not been initialized/played before rendering began
+- Fix: Rendering could have wrong length
+- Fix: Rendering could have an initial fade-in at beginning
+- Fix: Sample editor loop point playback could sound incorrectly when the loop end point was at end of file
+- Fix: Midiout Instrument: Help text for MPB and MPG was wrong
+- Fix: Big font mode could display the wrong mini map when quickly navigating screens
 
 2023-09-14 - Version 3.2.4
 - Fix: Instrument Modulation to Modulation could not work correctly on power-up
