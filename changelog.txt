@@ -1,3 +1,44 @@
+2025-01-05 - Version 4.0.1
+- Improved: Phrase/Table FX commands can be inserted via selection mode with EDIT+UP/DOWN
+- Improved: Project view - Clear unused Inst/Table now clears unused EQs as well
+- Improved: Minor font tweaks to "6" and "R" for readability improvements
+- Improved: Instrument view - Instrument settings Randomization improved
+- Improved: Sample Editor - Recording source input now allows more input source options - USB L & R, Line input only ...
+- Improved: Sample Editor - Recording External Instruments now allows monitoring of other external instrument tracks during recording
+- Improved: MIDI input - Recording notes when in using MIDI sync input timing improved for DEL (note delay) commands
+- Fix: External Instrument - USB and line input did not work independently between tracks
+- Fix: External Instrument - Inst. Mod type:Tracking - value would reset on note offs
+- Fix: MIDIOUT - Internal MIDI mode did not respect note-offs on MIDI channel 16
+- Fix: Aux Tables - TBX did not reset the table's playhead position if THO was also used in phrase
+- Fix: Rendering song with the repeat option was broken
+- Fix: MIDI Input and Output SPP (sending song position) reworked to allow pass-through
+- Fix: Quick Render was using the repeat settings from render screen 
+- Fix: Phrase - OPT+LEFT/RIGHT navigation could navigate to an empty chain
+- Fix: Phrase - Allow selection randomize on notes that have no instrument assignment  
+- Fix: EQ - Default empty EQ was being set to 01 instead of 00
+- Fix: EQ - Could enter the EQ view in MIDIOUT instrument via SHIFT+RIGHT shortcut
+- Fix: EQ - Could hard-crash when inserting a new EQ slot number if every EQ slot was already used
+- Fix: Trig Modulation Envelope could trigger after the source of the trigger was stopped
+- Fix: Sample Editor - Drawing/clearing issue on "RECORDING!" text after stopping the recording
+- Fix: Sample Editor - Previous Mutes/Solos were not reengaged after exiting sample editor 
+- Fix: Sample Editor - Default save directory should be the same directory that the sample was loaded from
+- Fix: Sample Editor - OVERWRITE would save to the wrong directory under certain circumstances
+- Fix: Instrument view - Random name generator could clear the "TRANSP. ON" value
+- Fix: Instrument view - Previewing instruments (PLAY) from inst. pool view would not work correctly with OPT+DIR navigation
+- Fix: Instrument Mods - OPT+EDIT (clearing of a value) would not take effect until a new note was triggered
+- Fix: Tables - If the table tic rate was set to FF, RET (retrig) FX commands would not stop after a KIL/OFF
+- Fix: Tables - ARP FX command did not reset the arp position when being called from a table
+- Fix: Tables - Tic FE mode (note map mode) did not work correctly with the table's note transpose column 
+- Fix: Tables - If default TIC is FF, changing TIC in table resulted in playhead being offset by one 
+- Fix: Reverb - Highest feedback and lowest room size settings could cause it to no longer function
+- Fix: REP FX command could be ignored if a RET fx command was previously active on the same column 
+- Fix: Song volume was still audible when set to 00
+- Fix: Bundle - Do not copy the same sample multiple times when the given sample is found in multiple instruments
+- Fix: MIDI Input POLY mode - Note off could cause pitch change if using INS FX command in table
+- Fix: SNG FX command help text to note that it does not work in Tables
+- Fix: Hypersynth - Help text for SHF and SWM did not mention they were relative 
+- Fix: MIDI Mapping view - Wrong text label for ADSR Envelope release assignments 
+
 2024-07-25 - Version 4.0.0
 - New: Configurable 3 band biquad EQ added to main mix, global effects, and instruments
 - New: Launchpad Pro MK3 MIDI Control Surface support added in MIDI Settings view
