@@ -1,3 +1,11 @@
+2025-01-23 - Version 4.0.2
+- Improvement: Project view - Groove and scale setting now only take effect after releasing edit for live performance 
+- Fix: Project - Global groove setting did not change correctly during live playback
+- Fix: External Instrument - Fixed Left/Right/Stereo input settings not working correctly
+- Fix: Clear unused instruments (Project view "CLEAR UNUSED INST/TBL") did not check if instrument is used via INS commands in tables
+- Fix: Wavsynth - Hard-crash if setting INT command to an empty instrument on the table's first row
+- Fix: Display drawing issue on big-font mode when sticking the right side navigation (SHIFTx3)
+
 2025-01-05 - Version 4.0.1
 - Improved: Phrase/Table FX commands can be inserted via selection mode with EDIT+UP/DOWN
 - Improved: Project view - Clear unused Inst/Table now clears unused EQs as well
