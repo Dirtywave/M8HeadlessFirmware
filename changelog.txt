@@ -1,5 +1,5 @@
 2025-01-23 - Version 4.0.2
-- Improvement: Project view - Groove and scale setting now only take effect after releasing edit for live performance 
+- Improved: Project view - Groove and scale setting now only take effect after releasing edit for live performance 
 - Fix: Project - Global groove setting did not change correctly during live playback
 - Fix: External Instrument - Fixed Left/Right/Stereo input settings not working correctly
 - Fix: Clear unused instruments (Project view "CLEAR UNUSED INST/TBL") did not check if instrument is used via INS commands in tables
