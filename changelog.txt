@@ -1,3 +1,35 @@
+2025-02-24 - Version 5.0.0
+- New: Samples can be played back while recording audio
+- New: Scope view limiter settings - Tap [EDIT] or [SHIFT]+[RIGHT] on "LIM" or "MIX" in Mixer to enter view and adjust limiter settings
+- New: Instruments - EQ settings are now saved with the instrument
+- New; EQ - 128 EQ slots now available to support instrument loading with EQs
+- New: FMSynth now has access to Wavsynth's wavetables for OP shapes
+- New: FMSynth Operators can now be individually be copied/pasted using the [SHIFT]+[OPT],[SHIFT]+[EDIT] shortcuts
+- New: FMSynth Saw, Pulse, Square shapes are now antialiased with the exception of the wavetable shapes (CPU restriction)
+- New: Song view quick render (selection mode + [EDIT]+[EDIT]) now supports external instrument "rendering"
+- New: Sampling and quick render now use a 32-bit normalization process before finalizing to 16-bit
+- New: 32bit sample support (limited to C-4 and below) now supported (Not recommended for use in playback)
+- New: Render View - Export renders and stems at 32-bit  
+- New: Sample Editor - 32-bit sample support
+- New: Sample Editor - Help text displaying the value at the loop and slices marker positions when editing
+- New: Sample Editor - "Lazy chop" added for adding slice markers. When cursor is on slice marker, [PLAY], then tap [EDIT] to add markers
+- New: Phrase - Random FILL can be applied to velocity only when only the V column is selected. [OPT]+[RIGHT] fill random pattern, [OPT]+[UP or DOWN] fill random 
+- Improved: Sample Editor waveform display speed improved
+- Improved: Clear unused phrases and chains could move "FE" chains / phrase to a lower number
+- Improved: When in MIDI input sync mode, switch to internal clock if there is no active MIDI sync detected.  
+- Improved: "DRUNK" LFO shape now works with LT[1-4] (LFO trigger) FX command
+- Fix: Sample Editor - Adjusting slice markers and saving did not work correctly if the sample was used in another instrument in the song
+- Fix: Sample Editor - Sample playback could be transposed by the song's global transpose setting
+- Fix: Sample Editor - Sample playback used the active instrument's EQ settings
+- Fix: Sample Editor - Trying to save when no sample was present caused a crash
+- Fix: MIDI mapped envelopes could show the wrong name in the MIDI Mapping Editor
+- Fix: MIDI note input on mono mode could stop unintentionally when notes overlap
+- Fix: External Instrument - Waveform oscilloscope would slow down when the note was released
+- Fix: RTO FX command (REPeat to) did not work correctly on VOL and PIT FX commands
+- Fix: Hypersynth - Copy / paste chords did not copy / paste each voice's on-off state
+- Fix: Sending MIDI Song Position Pointer did not work correctly when in Live mode (now sends a 0 for song position since the position is somewhat misleading)
+- Fix: Clear unused instruments (Project view "CLEAR UNUSED INST/TBL") cleared instruments used for TRACK MIDI INPUT in MIDI Settings
+
 2025-01-23 - Version 4.0.2
 - Improved: Project view - Groove and scale setting now only take effect after releasing edit for live performance 
 - Fix: Project - Global groove setting did not change correctly during live playback
