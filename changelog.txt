@@ -1,8 +1,13 @@
+
+2025-02-25 - Version 5.0.0A
+- Fix: Phrase - Editing FX commands via EDIT+LEFT or RIGHT did not progress FX commands correctly
+- Fix: Sample Editor - saving a recording may have some audio artifacts under certain conditions
+
 2025-02-24 - Version 5.0.0
 - New: Samples can be played back while recording audio
 - New: Scope view limiter settings - Tap [EDIT] or [SHIFT]+[RIGHT] on "LIM" or "MIX" in Mixer to enter view and adjust limiter settings
 - New: Instruments - EQ settings are now saved with the instrument
-- New; EQ - 128 EQ slots now available to support instrument loading with EQs
+- New: EQ - 128 EQ slots now available to support instrument loading with EQs
 - New: FMSynth now has access to Wavsynth's wavetables for OP shapes
 - New: FMSynth Operators can now be individually be copied/pasted using the [SHIFT]+[OPT],[SHIFT]+[EDIT] shortcuts
 - New: FMSynth Saw, Pulse, Square shapes are now antialiased with the exception of the wavetable shapes (CPU restriction)
