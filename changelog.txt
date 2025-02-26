@@ -1,7 +1,8 @@
 
-2025-02-25 - Version 5.0.0A
+2025-02-25 - Version 5.0.0B
 - Fix: Phrase - Editing FX commands via EDIT+LEFT or RIGHT did not progress FX commands correctly
 - Fix: Sample Editor - saving a recording may have some audio artifacts under certain conditions
+- Fix: Phrase V column - deleting an empty value inserted wrong default value
 
 2025-02-24 - Version 5.0.0
 - New: Samples can be played back while recording audio
