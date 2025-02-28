@@ -1,8 +1,6 @@
-
-2025-02-26 - Version 5.0.0C
+2025-02-28 - Version 5.0.0D
+- Fix: Sample editor - After saving a fresh recording, pops/clicks could occur once saved
 - Fix: Rendering - Left and right audio was flipped
-
-2025-02-25 - Version 5.0.0B
 - Fix: Phrase - Editing FX commands via EDIT+LEFT or RIGHT did not progress FX commands correctly
 - Fix: Sample Editor - saving a recording may have some audio artifacts under certain conditions
 - Fix: Phrase V column - deleting an empty value inserted wrong default value
