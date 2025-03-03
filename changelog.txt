@@ -1,3 +1,12 @@
+2025-03-03 - Verstion 5.0.1
+Improved: MIDI Record channel - New notes overwrite/replace present OFF and DEL commands, only inserts OFF when expected
+Fix: LFO - LFOs set to "TRIG: FREE" could run too quickly if there are multiple instrument triggers on the playing track
+Fix: Sampler - Previewing a sample in browser - when exiting browser if no sample is loaded, the sample instrument can play the last previewed sample
+Fix: Instrument - Randomize shortcut could detune the instrument without being able to fix it manually
+Fix: Song/Mixer - Visual glitch when having a song selection, navigating to to mixer, pressing SHIFT+OPT and releasing SHIFT first
+Fix: Remote / Serial display theme color commands did not work
+Fix: Song - Selection loop mode did not work correctly if phrases had a HOP fx command
+
 2025-02-28 - Version 5.0.0D
 - Fix: Sample editor - After saving a fresh recording, pops/clicks could occur once saved
 - Fix: Rendering - Left and right audio was flipped
