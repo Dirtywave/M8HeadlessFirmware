@@ -1,4 +1,4 @@
-2025-03-03 - Verstion 5.0.1
+2025-03-03 - Version 5.0.1
 Improved: MIDI Record channel - New notes overwrite/replace present OFF and DEL commands, only inserts OFF when expected
 Fix: LFO - LFOs set to "TRIG: FREE" could run too quickly if there are multiple instrument triggers on the playing track
 Fix: Sampler - Previewing a sample in browser - when exiting browser if no sample is loaded, the sample instrument can play the last previewed sample
