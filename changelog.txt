@@ -1,11 +1,45 @@
+2025-05-01 - Version 6.0.0
+- New: Various settings have been moved to new System Settings view accessible from the project view
+- New: System Settings - Count-in metronome options for when recording audio
+- New: System Settings - USB Audio input/output routing
+- New: Song View - Rearrange tracks - Double tap [Up] on song row 00 to select a track, [Edit]+[Left or Right] to reorder selected track
+- New: Sampler - PLAY:REPITCH modes to lock sample length to song tempo
+- New: Sample Editor - Reverse and Invert processes added
+- New: Theme colors can now be adjusted by HSV values. A global hue adjust has been added to the top by editing "<>"
+- New: Post-filter LIMIT/CLIP distortion mode added: W3
+- New: Soft clipping mode - Activated on the limiter/main mix scope view
+- New: SNC (Oscillator Phase position) fx command added to Wavsynth
+- New: Novation Launchpad MK3 note mode, sequencer mode, beat repeat
+- New: NXT fx command - Triggers specified instrument on the adjacent track to the right
+- New: ERR fx command - Randomizes pitch and other parameters by specified amount. Available for Wavsynth, Macrosynth, Sampler, and FMSynth.
+- New: Table Tick mode - Octave map. Map table position to octave (TIC:FC)
+- New: Table Tick mode - Velocity map. Map table position to velocity (TIC:FD)
+- New: Added ALLPASS filter mode to EQs
+- New: Phrase - Instrument pool popup is now only activated with EDIT+DOWN on instrument 00
+- Improved: Model:02 minor battery percentage readout and battery life improvements
+- Improved: USB Audio - Fixed audio dropouts when performing certain intensive tasks (rendering etc)
+- Improved: Retrig of same instruments no longer resets oscillator to "random" position. Clickless retrig
+- Improved: MIDI recording now allows legato and places note-offs next to the recorded notes 
+- Improved: On-screen keyboard character selection - Selectable ABCD/QWERTY mode
+- Fix: Fmsynth - IMP OSC antialiasing was not working correctly
+- Fix: Wavsynth - Small "SIZE" settings did not produce base shapes correctly
+- Fix: Sampler - “OSC” playback mode was not working correctly
+- Fix: Sampler - Short loop point samples might not loop correctly when interpolation was enabled
+- Fix: Theme - Changing colors associated to the trig blocks on the info area did not use new colors unless reset
+- Fix: Internal MIDI mode could cause hard-crash if the MIDIOut instrument was trigged by the track MIDI channel settings
+- Fix: Theme color same as background issue
+- Fix: "OFF" notes would not stop RET (retrigger) FX command
+- Fix: Table & Aux table TIC FF improvements when triggered by phrase FX commands
+- Fix: Long song name (all 12 characters) could not create bundles
+
 2025-03-03 - Version 5.0.1
-Improved: MIDI Record channel - New notes overwrite/replace present OFF and DEL commands, only inserts OFF when expected
-Fix: LFO - LFOs set to "TRIG: FREE" could run too quickly if there are multiple instrument triggers on the playing track
-Fix: Sampler - Previewing a sample in browser - when exiting browser if no sample is loaded, the sample instrument can play the last previewed sample
-Fix: Instrument - Randomize shortcut could detune the instrument without being able to fix it manually
-Fix: Song/Mixer - Visual glitch when having a song selection, navigating to to mixer, pressing SHIFT+OPT and releasing SHIFT first
-Fix: Remote / Serial display theme color commands did not work
-Fix: Song - Selection loop mode did not work correctly if phrases had a HOP fx command
+- Improved: MIDI Record channel - New notes overwrite/replace present OFF and DEL commands, only inserts OFF when expected
+- Fix: LFO - LFOs set to "TRIG: FREE" could run too quickly if there are multiple instrument triggers on the playing track
+- Fix: Sampler - Previewing a sample in browser - when exiting browser if no sample is loaded, the sample instrument can play the last previewed sample
+- Fix: Instrument - Randomize shortcut could detune the instrument without being able to fix it manually
+- Fix: Song/Mixer - Visual glitch when having a song selection, navigating to to mixer, pressing SHIFT+OPT and releasing SHIFT first
+- Fix: Remote / Serial display theme color commands did not work
+- Fix: Song - Selection loop mode did not work correctly if phrases had a HOP fx command
 
 2025-02-28 - Version 5.0.0D
 - Fix: Sample editor - After saving a fresh recording, pops/clicks could occur once saved
