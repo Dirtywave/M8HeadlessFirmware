@@ -1,3 +1,6 @@
+2025-05-03 - Version 6.0.0A
+- Fix: Sampler - REPITCH did not work correctly with sample rates other than 44.1k 
+
 2025-05-01 - Version 6.0.0
 - New: Various settings have been moved to new System Settings view accessible from the project view
 - New: System Settings - Count-in metronome options for when recording audio
