@@ -1,3 +1,6 @@
+2025-05-07 - Version 6.0.0B
+- Fix: Sample Editor - 24BIT file saving after edited resulted in the wrong header data (corrupt opening error on Win/Mac)
+
 2025-05-03 - Version 6.0.0A
 - Fix: Sampler - REPITCH did not work correctly with sample rates other than 44.1k 
 
