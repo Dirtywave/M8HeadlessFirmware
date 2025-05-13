@@ -1,3 +1,10 @@
+2025-05-13 - Version 6.0.1
+- Fix: Sample Editor - Process:Duplicate could have noise / data appended to the sample after processing 24bit samples
+- Fix: Sampler -  Samples with file based loop markers could have dropout / playback issues
+- Fix: Sampler - Hard crash could occur if a sample used LFT command with LFO loop start in some cases
+- Fix: USB Audio Pre-delay mode did not work correctly
+- Fix: FM Synth - Randomize all parameters shortcut could assign EQ to random number
+
 2025-05-07 - Version 6.0.0B
 - Fix: Sample Editor - 24BIT file saving after edited resulted in the wrong header data (corrupt opening error on Win/Mac)
 
