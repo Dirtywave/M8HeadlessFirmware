@@ -1,13 +1,13 @@
 2025-06-24 - Version 6.0.2
 Fix: Model:02 Display/Graphical issues on some units 
-Fix: DEL FX command (Delay) in table now works with REP FX command (Repeat)
-Fix: TBX FX command (Aux table) did not work correctly on table FF when using TIC00
-Fix: TBX FX command (Aux table) with a RET (Retrig) FX command and TIC00 possible hard crash
-Fix: NXT FX command global transpose made the triggered instrument play the wrong note
-Fix: NXT FX command (Play instrument on adjacent track) could not respect a note off when using table transpose on the NXT instrument
-Fix: NXT FX command did not render if called from a table called from a NXT command
+Fix: DEL (Delay) FX command in table now works with REP FX command (Repeat)
 Fix: DEL (Delay) FX command help text was incorrect in table
 Fix: DEL (Delay) FX command in table did not work correctly with a value of FF
+Fix: TBX (Aux table) FX command  did not work correctly on table FF when using TIC00
+Fix: TBX (Aux table) FX command with a RET (Retrig) FX command and TIC00 possible hard crash
+Fix: NXT (Play Inst. on next track) FX command could not respect a note off when using table transpose on the NXT instrument
+Fix: NXT FX command - Global transpose made the triggered instrument play the wrong note
+Fix: NXT FX command did not render if called from a table called from a NXT command
 Fix: Launchpad - Phrase - Editing note velocity on M8 after selecting a phrase via Launchpad could edit the wrong phrase
 Fix: LFO assigned to volume could interrupt the release stage of an ADSR envelope also assigned to volume
 Fix: Phrase - Interpolating notes may add notes when the range is not valid (no stopping note)
