@@ -1,3 +1,22 @@
+2025-09-15 - Version 6.2.0
+- New: OTT (Over The Top) multi-band compression effect added to main mix and sample editor process effect
+- New: Chorus replaced with ModFX - Can set the ModFx type/mode to Chorus, Phaser, or Flanger
+- New: Reverb - Shimmer parameter added
+- New: Line input noise gate - Added line-in noise gate option in system settings
+- New: Song Backups - When a song is overwritten, the previous version is saved in [path]/Backup/[song name]
+- New: Wavsynth - Triangle Shape now interacts with the SCAN parameter  
+- Improved: Phrase & Table - Cut/Copy/Paste selection (FX commands/values) between Phrase and Table
+- Improved: MIDI Receive Sync - BPM display improved 
+- Fix: Render - Song render directory was clipped to 3 characters
+- Fix: Sample Editor - Do not play back the active instrument's sample while recording a new sample
+- Fix: Live mode playback - Issue when triggering multiple tracks of different chain lengths
+- Fix: TBX (Aux table) - When CHA (Chance left) trigged on N or V columns, it could stay active longer than expected
+- Fix: TBX (Aux table) - TIC00 would cause first table FX command to happen twice
+- Fix: Table - Velocity map tic mode did not map correctly with MIDI
+- Fix: FmSynth - Special CLK OP shape as modulator could reset OPs not assigned to it
+- Fix: MIDIOUT - Muted track may not release pitch bend wheel when using PBN FX command
+- Fix: HOPFF (stop track) could potentially not stop NXT (play instrument on next track)
+
 2025-07-01 - Version 6.0.2A
 - Fix: Song - Track selection mode to reorder tracks could trigger when cursor was not on 00 due to scroll offset
 - Fix: Render - "FAILED CREATING RENDER DIRECTORY" Error fix
