@@ -1,3 +1,8 @@
+2025-09-22 - Version 6.2.1
+- Fix: Playback - DJF Type and Res were not recalled correctly on song start
+- Fix: Sampler - Single cycle samples without loop markers could have artifacts when used with filter
+- Fix: Live mode - Cueing a track may play next song row if other tracks in Queue were not playing or a chain was without phrases
+
 2025-09-15 - Version 6.2.0
 - New: OTT (Over The Top) multi-band compression effect added to main mix and sample editor process effect
 - New: Chorus replaced with ModFX - Can set the ModFx type/mode to Chorus, Phaser, or Flanger
