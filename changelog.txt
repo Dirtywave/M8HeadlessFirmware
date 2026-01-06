@@ -1,3 +1,35 @@
+2025-1-6 - Version 6.5
+- New: USB Drive mode - Accessible via Project screen next to System Settings
+- New: Better USB Audio - Improved 24bit audio streaming at lower latency
+- New: Multichannel USB Audio - Set via USB AUDIO MODE in System Settings screen (ch 1&2 main, ch3-18 tracks, 19-20 modfx, 21-22 delay, 23-24 reverb)
+- New: MTT (Micro tick timing) FX command - Allows negative and positive time based nudging at 1/8th tick resolution
+- New: Groove - PPQN setting per groove to allow finer timing adjustments per step
+- Improved: Sample Editor - Full file name preserved / scrollable in interface, not limited to 18 characters
+- Fix: MIDIOUT & External Inst - Fixed hanging note issue with CHD command
+- Fix: MIDIOUT & External Inst - Sending MIDI CC as FX command did not work if instrument's CC value was not set
+- Fix: Song - New song via saved new song template resets Project worktime to 0
+- Fix: Song - Selection to render did not work with song names that are 12 characters
+- Fix: MIDI Mapping - All MIDI destinations would disappear when adding mapping to the last available slot (7F)
+- Fix: Sampler OSC mode - fixed some occasional pops & clicks
+- Fix: Recording/Sampling - Ignore external MIDI clock while recording audio to prevent corrupted playback (double tempo etc)
+- Fix: TBX FX Command (Aux table) - When using TBX inside a aux table the column playheads would become out of sync
+- Fix: PBN (Note pitch bend) FX command - Bent too quickly when the instrument table was playing at TICFF
+- Fix: Mixer View - Sometimes the selected track would change when cueing song playback
+- Fix: MIDI Instrument internal MIDI mode - Do not release notes if program change is the same as the current settings
+- Fix: MIDI Settings - Crash if using internal MIDI mode and using program change
+
+2025-10-28 - Version 6.2.2
+- Fix: Internal MIDI CC automation to EQ parameters could cause a corrupt SD card folder when saving song during playback
+- Fix: OTT's multiband EQ was always applied to the mix even if OTT was set to 00
+- Fix: Sampler - Process:Slice did not go to 128 slices as an option (stopped at 127)
+- Fix: PSL FX command (Pitch slide) did not work when sliding from C-1
+- Fix: Table TIC Note/Velocity/Octave modes disabled ARP command's note pitch
+- Fix: Rendering song with RMX could result in extra silence at the end of the rendering
+- Fix: Table command with table hop on a table with TICFF and retrig in table could cause crash
+- Fix: Rendering stems with NXT (Play instrument on next track) did not stop notes
+- Fix: "Clear unused" instruments did not clear correctly with RNL (randomized) instrument command
+- Fix: Typo in FX help for TIC command
+
 2025-09-22 - Version 6.2.1
 - Fix: Playback - DJF Type and Res were not recalled correctly on song start
 - Fix: Sampler - Single cycle samples without loop markers could have artifacts when used with filter
