@@ -1,6 +1,7 @@
-2026-01-07 - Version 6.5.0A
+2026-01-07 - Version 6.5.0 Hotfixes
 - Fix: Groove ticks larger than 0x1A did not work in 24 PPQN
 - Fix: MTT - Typo in help text & division print issue on help message
+- Fix: External Instrument Mods did not trigger
 
 2026-01-06 - Version 6.5.0
 - New: USB Drive mode - Accessible via Project screen next to System Settings
