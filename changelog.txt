@@ -4,6 +4,7 @@
 - Fix: External Instrument Mods did not trigger
 - Fix: Sample editor - Process:OTT resulted in noise on audio output
 - Fix: Groove FX commands ignored any groove PPQ setting
+- Fix: MIDI Record note channel - Fixes for new PPQN changes
 
 2026-01-06 - Version 6.5.0
 - New: USB Drive mode - Accessible via Project screen next to System Settings
