@@ -5,6 +5,7 @@
 - Fix: Sample editor - Process:OTT resulted in noise on audio output
 - Fix: Groove FX commands ignored any groove PPQ setting
 - Fix: MIDI Record note channel - Fixes for new PPQN changes
+- Fix: Tables having swing when using high PPQ grooves
 
 2026-01-06 - Version 6.5.0
 - New: USB Drive mode - Accessible via Project screen next to System Settings
