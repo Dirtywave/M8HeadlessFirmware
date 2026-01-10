@@ -1,4 +1,4 @@
-2026-01-08 - Version 6.5.0 Hotfixes
+2026-01-10 - Version 6.5.0 Hotfixes
 - Fix: Groove ticks larger than 0x1A did not work in 24 PPQN
 - Fix: MTT - Typo in help text & division print issue on help message
 - Fix: External Instrument Mods did not trigger
@@ -6,6 +6,7 @@
 - Fix: Groove FX commands ignored any groove PPQ setting
 - Fix: MIDI Record note channel - Fixes for new PPQN changes
 - Fix: Tables having swing when using high PPQ grooves
+- Fix: Sampler - LFO to Loop Start LT[1-4] FX command did not retrigger loop properly
 
 2026-01-06 - Version 6.5.0
 - New: USB Drive mode - Accessible via Project screen next to System Settings
