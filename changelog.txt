@@ -7,6 +7,8 @@
 - Fix: MIDI Record note channel - Fixes for new PPQN changes
 - Fix: Tables having swing when using high PPQ grooves
 - Fix: Sampler - LFO to Loop Start LT[1-4] FX command did not retrigger loop properly
+- Fix: USB audio dropouts when receiving USB MIDI
+- Fix: RMX FX command - On song row 0 could cause OPT key press freeze due to trying to get song length
 
 2026-01-06 - Version 6.5.0
 - New: USB Drive mode - Accessible via Project screen next to System Settings
