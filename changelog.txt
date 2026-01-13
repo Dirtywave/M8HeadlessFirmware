@@ -1,15 +1,17 @@
-2026-01-11 - Version 6.5.0 Hotfixes
-- Fix: Groove ticks larger than 0x1A did not work in 24 PPQN
+2026-01-13 - Version 6.5.1
+- Fix: MTT (micro tick time) FX command - Negative values did not work with grooves properly
+- Fix: RET (retrig FX command) and KIL/OFF - Did not take affect off-grid when a high PPQN in groove or MTT was used
+- Fix: Sample playback - Reduced pops / clicks on short / quickly retriggered (RET command) samples when filter is enabled with low cutoff
+- Fix: Groove - Ticks larger than 0x1A did not work in 24 PPQN mode
 - Fix: MTT - Typo in help text & division print issue on help message
 - Fix: External Instrument Mods did not trigger
-- Fix: Sample editor - Process:OTT resulted in noise on audio output
-- Fix: Groove FX commands ignored any groove PPQ setting
+- Fix: Sample Editor - Process:OTT resulted in noise on audio output
+- Fix: Groove FX commands - Ignored any groove PPQ setting
 - Fix: MIDI Record note channel - Fixes for new PPQN changes
-- Fix: Tables having swing when using high PPQ grooves
+- Fix: Tables - Tables had groove based swing applied when using high PPQ grooves
 - Fix: Sampler - LFO to Loop Start LT[1-4] FX command did not retrigger loop properly
-- Fix: USB audio dropouts when receiving USB MIDI
+- Fix: USB audio - Possible audio dropouts when receiving USB MIDI
 - Fix: RMX FX command - On song row 0 could cause OPT key press freeze due to trying to get song length
-- Fix: Negative MTT (micro tick time) did not work with grooves properly
 
 2026-01-06 - Version 6.5.0
 - New: USB Drive mode - Accessible via Project screen next to System Settings
