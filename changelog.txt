@@ -1,3 +1,7 @@
+2026-01-14 - Version 6.5.1 A
+- Fix: Rendering - Sample instruments using loop pingpong with slice FX command might be ignored
+- Fix: Instrument Pool - Preview from Inst. Pool file browser could reset instrument to wrong settings when exiting browser
+
 2026-01-13 - Version 6.5.1
 - Fix: MTT (micro tick time) FX command - Negative values did not work with grooves properly
 - Fix: RET (retrig FX command) and KIL/OFF - Did not take affect off-grid when a high PPQN in groove or MTT was used
