@@ -1,3 +1,6 @@
+2026-01-16 - Version 6.5.1 B
+- Fix: SNG (Song hop) FX command - Could cause misalignement of groove when set on a row other than zero
+
 2026-01-14 - Version 6.5.1 A
 - Fix: Rendering - Sample instruments using loop pingpong with slice FX command might be ignored
 - Fix: Instrument Pool - Preview from Inst. Pool file browser could reset instrument to wrong settings when exiting browser
