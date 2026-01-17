@@ -1,6 +1,7 @@
 2026-01-17 - Version 6.5.1 C
 - Fix: MIDI control - External MIDI control of track volumes could have pops/clicks if moving too quickly
 - Fix: SNG (Song hop) FX command - Could cause misalignement of groove when set on a row other than zero
+- Fix: SNG (Song hop) FX command - caused MTT on row 1 of a phrase to not fire after the song hopped
 - Fix: Rendering - Sample instruments using loop pingpong with slice FX command might be ignored
 - Fix: Instrument Pool - Preview from Inst. Pool file browser could reset instrument to wrong settings when exiting browser
 - Fix: RET (Retrig) FX command - Fix for RET10 not working correctly
