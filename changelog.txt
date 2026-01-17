@@ -4,6 +4,7 @@
 - Fix: Rendering - Sample instruments using loop pingpong with slice FX command might be ignored
 - Fix: Instrument Pool - Preview from Inst. Pool file browser could reset instrument to wrong settings when exiting browser
 - Fix: RET (Retrig) FX command - Fix for RET10 not working correctly
+- Fix: Table - EQI (Instrument EQ) FX command - Navigating to EQ used the wrong number (0x1F limit from previous 4.x version)
 
 2026-01-13 - Version 6.5.1
 - Fix: MTT (micro tick time) FX command - Negative values did not work with grooves properly
