@@ -1,3 +1,6 @@
+2026-01-23 - Version 6.5.1 D
+- Fix: Sampler - Trig Env Mod could sometimes miss a trig / misbehave
+
 2026-01-17 - Version 6.5.1 C
 - Fix: MIDI control - External MIDI control of track volumes could have pops/clicks if moving too quickly
 - Fix: SNG (Song hop) FX command - Could cause misalignement of groove when set on a row other than zero
