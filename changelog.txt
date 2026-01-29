@@ -1,3 +1,8 @@
+2026-01-29 - Version 6.5.1 E
+- Fix: Song queue loading - Fixed potetial display issue when switching songs
+- Fix: Sampler - Loop start assigned to an envelope sounded different than previous versions 
+- Fix: USB Audio - USB Main out set to delay did not work
+
 2026-01-23 - Version 6.5.1 D
 - Fix: Sampler - Trig Env Mod could sometimes miss a trig / misbehave
 
