@@ -1,3 +1,7 @@
+2026-02-01 - Version 6.5.1 F
+- Fix: Sampler - EQI (Instrument EQ) FX command did not work when set on same row as the sample instrument note trigger
+- Fix: Song - Live mode / queued playhead - Table transpose caused skipping of note OFFs after cued phrase plays
+
 2026-01-29 - Version 6.5.1 E
 - Fix: Song queue loading - Fixed potetial display issue when switching songs
 - Fix: Sampler - Loop start assigned to an envelope sounded different than previous versions 
