@@ -1,3 +1,6 @@
+2026-02-05 - Version 6.5.1 G
+- Fix: Sampler - Loading a song with a blank sample would play the last loaded song's sample instead of nothing
+
 2026-02-01 - Version 6.5.1 F
 - Fix: Sampler - EQI (Instrument EQ) FX command did not work when set on same row as the sample instrument note trigger
 - Fix: Song - Live mode / queued playhead - Table transpose caused skipping of note OFFs after cued phrase plays
