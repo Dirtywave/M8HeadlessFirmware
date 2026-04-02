@@ -1,3 +1,11 @@
+2026-04-01 - Version 6.5.2
+- Improved: Reverb Shimmer effect audio quality improvements - less gritty
+- Fix: MIDI sync send and receive issues while loading songs / queue song loading
+- Fix: Removed stopping notes from MIDI input on MIDI program changes
+- Fix: Trig envelope not resetting correctly when cycling stop/play and trig envelope is active
+- Fix: Table Tic Velocity map (TIC:FD) lowest values were not scaled properly
+- Fix: REP indication ("^^") did not show for FX2 and FX3 columns in phrase
+
 2026-02-05 - Version 6.5.1 G
 - Fix: Sampler - Loading a song with a blank sample would play the last loaded song's sample instead of nothing
 
