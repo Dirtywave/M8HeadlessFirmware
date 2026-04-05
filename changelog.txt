@@ -1,3 +1,8 @@
+
+2026-04-05 - Version 6.5.2 A
+Fix: MIDI note input & poly mode - MIDI notes not triggering when using ADSR/Drum envelope on occasion
+Fix: MIDI sending clock sync issues on queued song loading
+
 2026-04-01 - Version 6.5.2
 - Improved: Reverb Shimmer effect audio quality improvements - less gritty
 - Fix: MIDI sync send and receive issues while loading songs / queue song loading
