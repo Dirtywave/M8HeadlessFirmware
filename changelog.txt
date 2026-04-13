@@ -1,3 +1,6 @@
+2026-04-13 - Version 6.5.2 C
+Fix: Sample Editor: Sampling line-in right did not work correctly 
+
 2026-04-06 - Version 6.5.2 B
 Fix: M8C for iOS was broken
 Fix: Instrument Pool - After moving an instrument and deleting it, it cleared the wrong instrument
