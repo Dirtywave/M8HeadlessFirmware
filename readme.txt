@@ -12,13 +12,13 @@ https://github.com/Koromix/tytools/releases
 4. Close all other applications
 5. Open "TyUploader" - Note: "TyCommander" was also installed, don't use that.
 6. Make sure "M8 [xxxxxxxx]" is selected in the dropdown.
-7. Click "Upload" select the correct model hex file from this zip.
+7. Click "Upload" select the correct model hex file
+   from Firmware/Model01 or Firmware/Model02.
 
 
 Note for Windows 7 - Download and install Teensyduino to install the USB 
 driver needed for flashing M8 firmware:
 https://www.pjrc.com/teensy/td_download.html
-
 
 ----------------------------------------------------------------------------------
 M8 HEADLESS

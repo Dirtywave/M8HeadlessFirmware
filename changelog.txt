@@ -1,13 +1,92 @@
+2026-10-05 - Version 6.6.3 D
+- Fix: MIDI syn input with SPP (song position pointer) - M8 started one 16th note behind the sender at non-zero song positions
+- Fix: Trig envelopes were improperly reset by new note triggers on the destination instrument
+
+2026-09-13 - Version 6.6.3 C
+- Fix: MIDI intruments CC values always sent on instrument trigger. Now only sent on song start, instrument change, or the CC value changes
+
+2026-09-13 - Version 6.6.3 B
+- Fix: Trig envelopes could occasionally miss a trigger depending on source and receiving track order
+- Fix: FMsynth - CLICK oscillator did not retrigger when using the last algorithm
+
+2026-09-10 - Version 6.6.3 A
+- Fix: MIDI instrument did not show notes on the right info area
+
+2026-09-07 - Version 6.6.3
+- Improved: Recording - Mitigated audio dropouts while recording and playing back song at the same time
+- Fix: Phrase - A note or OFF command could possibly not stop an active RET retrigger
+- Fix: Phrase - REP "^^" indicators could scan disconnected phrase islands in previous chains
+- Fix: Phrase / Chain - Selection playback could loop incorrectly when using RMX or SNG
+- Fix: Table - Envelope decay commands could be skipped when running at TICFF
+- Fix: Aux Table - SED on TIC00 reset phrase randomness on every new note
+- Fix: Instrument switching could cause an audible discontinuity when the next instrument's DRY volume was 00
+- Fix: PSL pitch slide was not reset on instrument retrigger
+- Fix: ARP stopped on note OFF when using ADSR
+- Fix: Trig envelopes - could retain or use a previous value if no trigger occurred
+- Fix: Sampler - SLI could fail to trigger depending on SD card read performance
+- Fix: Right side info area - Notes remained displayed after their release became inaudible
+
+2026-08-24 - Version 6.6.2 A
+- Fix: A note without INST after OFF/KILL replayed the last instrument and restarted envelopes
+- Fix: Table notes after OFF/KILL retriggered the instrument
+- Fix: Macrosynth PLUCKED / similar models kept ringing after a new INST following note OFF
+- Fix: RMX was not working correctly when controlled track's playheads wrapped
+
+2026-08-22 - Version 6.6.2
+- Improved: EQ View - Spectrum now includes left and right (was left only)
+- Improved: EQ View - Improved spectrum visuals
+- Fix: ARP retriggered an instrument that had already been turned off with KILL/OFF
+- Fix: Firmware Update - Settings and project autosave are written after confirming, before restart
+- Fix: Mute/solo after boot let the first notes of muted tracks through
+- Fix: RMX FX command - Tracks in song selection loop mode continued past the loop region
+- Fix: EQ View - Spectrum briefly showed the next instrument when switching, even if it used a different EQ or none
+- Fix: EQ View - Mix / FX EQ switched to bank 00 after a display reset
+
+2026-08-20 - Version 6.6.1
+- New: Mixer / Effect Settings - Tapping EDIT on a parameter captures its FX command so tapping EDIT in a Phrase or Table FX column inserts it (same as Instrument)
+- New: Song View - SELECT+EDIT a third time also clones instruments used in the selection, including INS and NXT commands
+- Improved: CPU optimizations
+- Fix: EQ spectrum graph was taking priority over sample playback during heavy sample use
+
+2026-08-19 - Version 6.6.0
+- New: EQ View - Spectrum 
+- New: Firmware Update - Flash firmware from SD card via System Settings (Works on version 6.6 and up)
+- New: Battery fuel gauge remains active on power off for more accurate battery % during use
+- New: ModFX Comb filter type
+- New: Backend rework to free up some RAM for the future
+- New: Hypersynth - Shape parameter (SAW, SOFT SAW, DARK SAW, SQUARE SOFT, TRIANGLE, SINE, SINE 3X, SINE FB, SINE FOLD, SINE RING, SINE HALF, SINE ORGAN)
+- New: Song View - Press LEFT twice on track 1 to select the whole row (PLAY cues the row, [EDIT]+[UP or DOWN] moves the row and its bookmarks)
+- New: Song View - Row bookmarks: in row-select mode, [OPT]+[LEFT or RIGHT] or [EDIT]+[LEFT or RIGHT] cycles theme colors and options, [OPT+EDIT] clears
+- Improved: Hypersynth - Sub osc interpolation
+- Improved: MIDI Mapping - A message is displayed when all mapping slots are used
+- Improved: ADSR ENV - Same-instrument retrigger resumes attack from the current envelope level
+- Fix: Table - Note map (TIC:FE) and Octave map (TIC:FC) retriggered when volume was changed in a phrase or TBX (Aux table)
+- Fix: Table - Velocity map (TIC:FD) retriggered on note changes instead of only velocity changes
+- Fix: Render - Excessive TPO tempo changes did not line up correctly with DAW tempo
+- Fix: Render - Quick render length could be slightly incorrect
+- Fix: Render - Quick render initial transient was messy when OTT was enabled
+- Fix: Instrument Pool - Moving instruments did not update MIDI Settings instrument numbers for MIDI track channels
+- Fix: Effect Settings - EDIT+OPT on EQ reset the parameter above EQ
+- Fix: MIDI input on track channel - Table's first row could trigger incorrectly
+- Fix: MIDI input on track channel - Hang / stuck note if the instrument uses the INS command in its table
+- Fix: Recording - Count in caused track 1's volume to be incorrect
+- Fix: MIDI Instrument - ADSR envelope mapped to a CC did not enter release on the OFF command
+- Fix: Phrase - RNL next to HOP could randomize other FX on the hop destination row
+- Fix: RMX - Queued song position (blinking cursor) on affected tracks was not cleared
+- Fix: File date advances to the firmware build time when the stored clock is older
+- Fix: Phrase - Velocity-only random FILL could not be undone with paste
+- Fix: Phrase "^^" REP indication was cleared by RTO even though RTO does not stop REP
+
 2026-04-13 - Version 6.5.2 C
-Fix: Sample Editor: Sampling line-in right did not work correctly 
+- Fix: Sample Editor: Sampling line-in right did not work correctly 
 
 2026-04-06 - Version 6.5.2 B
-Fix: M8C for iOS was broken
-Fix: Instrument Pool - After moving an instrument and deleting it, it cleared the wrong instrument
+- Fix: M8C for iOS was broken
+- Fix: Instrument Pool - After moving an instrument and deleting it, it cleared the wrong instrument
 
 2026-04-05 - Version 6.5.2 A
-Fix: MIDI note input & poly mode - MIDI notes not triggering when using ADSR/Drum envelope on occasion
-Fix: MIDI sending clock sync issues on queued song loading
+- Fix: MIDI note input & poly mode - MIDI notes not triggering when using ADSR/Drum envelope on occasion
+- Fix: MIDI sending clock sync issues on queued song loading
 
 2026-04-01 - Version 6.5.2
 - Improved: Reverb Shimmer effect audio quality improvements - less gritty
