@@ -1,3 +1,6 @@
+2026-10-05 - Version 6.6.3 E
+- Fix: Small visual bug in project tempo nudge "<>"
+
 2026-10-05 - Version 6.6.3 D
 - Fix: MIDI syn input with SPP (song position pointer) - M8 started one 16th note behind the sender at non-zero song positions
 - Fix: Trig envelopes were improperly reset by new note triggers on the destination instrument
