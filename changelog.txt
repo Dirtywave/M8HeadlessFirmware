@@ -1,3 +1,6 @@
+2026-10-20 - Version 6.6.3 F
+- Fix: Table - RTO could change an unrelated effect setting
+
 2026-10-05 - Version 6.6.3 E
 - Fix: Small visual bug in project tempo nudge "<>"
 

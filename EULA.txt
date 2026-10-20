@@ -13,6 +13,8 @@ SUMMARY
 - You must agree to all of the terms of this EULA to use the Software.
 - If you agree, you may use the Software for any lawful purpose as permitted
   by this agreement.
+- Firmware included in the Software may not be run in an emulator, simulator,
+  or other software implementation of the target hardware.
 - The Software is provided “as is” with no warranties, and Dirtywave is not
   liable for damages arising from its use.
 - Reverse engineering, decompiling, or attempting to extract source code
@@ -49,7 +51,11 @@ c) Reverse engineer, decompile, disassemble, or otherwise attempt to derive
 d) License, sell, rent, lease, assign, distribute, transmit, host,
    outsource, disclose, or otherwise make the Software available to any
    third party without prior written permission from Dirtywave.
-e) Use the Software for any unlawful purpose or in violation of this EULA.
+e) Run or otherwise use firmware included in the Software, in whole or in
+   part, in an emulator, simulator, virtualized target-hardware environment,
+   or other software implementation of the target hardware without
+   Dirtywave’s prior written permission.
+f) Use the Software for any unlawful purpose or in violation of this EULA.
 
 INTELLECTUAL PROPERTY
 
