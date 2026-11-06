@@ -1,3 +1,10 @@
+2026-11-06 - Version 6.6.4
+- Improved: Battery percentage accuracy & battery life on Model:02
+- Fix: Instrument - Moving down after editing the name could change TRANSPOSE
+- Fix: Project - editing the SCALE setting above B should wrap back to C 
+- Fix: Song View - Row-select mode did not exit when navigating to Project View
+- Fix: Table - INS commands in FX columns 2 or 3 did not work when the column used TICFF
+
 2026-10-20 - Version 6.6.3 F
 - Fix: Table - RTO could change an unrelated effect setting
 
